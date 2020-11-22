@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Question from './components/Question';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const questions = [
+    {
+        title: "Is Illinois cold in winter?",
+        description: "Gosh, I have stayed there for almost 5 yrs"
+    },
+    {
+        title: "When can I leave Illinois?",
+        description: "In winter",
+    }
+];
+const temp = () => {
+    return <Question questions={questions}/>;
+};
 
-export default App;
+export default temp;
