@@ -2,7 +2,7 @@ import React from 'react';
 import QuestionList from './components/QuestionList';
 import Header from './components/Header';
 import Route from './components/Route';
-import Profile from './components/Profile';
+import User from './components/Profile';
 
 const questions = [
     {
@@ -14,15 +14,28 @@ const questions = [
         description: "In winter",
     }
 ];
+
+const users = [
+    {
+        firstName: "Emily",
+        lastName: "Black",
+        location: "Chicago",
+        occupation: "professor",
+        verified: false,
+        expert: true,
+        expertField: "Computer Science",
+    }
+];
+
 const App = () => {
     return (
         <div>
             <Header/>
             <Route path="/">
-                <QuestionList questions={questions}/>
+                    <QuestionList questions={questions}/>
             </Route>
             <Route path="/profile">
-            <Profile/>
+                    <User users={users}/>
             </Route>
         </div>
     )
