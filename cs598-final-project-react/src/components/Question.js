@@ -1,5 +1,4 @@
 import React from 'react';
-import userImg from "../images/user.png";
 
 const Question = ({question}) => {
     const renderedQuestion = question.map(question => {
@@ -14,7 +13,7 @@ const Question = ({question}) => {
                 <div className="ui segment container">
                     <div className="ui horizontal list">
                         <div className="item">
-                            <img className="ui tiny circular image" src={userImg} alt=""/>
+                            <img className="ui tiny circular image" src="https://i.pravatar.cc/300" alt=""/>
                             <div className="content">
                                 <div className="ui header" style={{marginBottom: 10}}>
                                     {question.answers[i].user}
