@@ -51,7 +51,7 @@ const question = [
                 userDescription: "UIUC CS Student",
                 icon: '/images/profile.jpg',
                 content: "I won't leave Illinois since the rent is very cheap here",
-                upVote: 129,
+                upVote: 529,
                 downVote: 23,
                 misinformation: 4
             },

@@ -4,6 +4,11 @@ import userImg from "../images/user.png";
 const Question = ({question}) => {
     const renderedQuestion = question.map(question => {
         let elements = [];
+        let answerSort = question.answers;
+        answerSort.sort(function (a, b) {
+            // here we can set some useful sorting algorithms
+            return b.upVote - a.upVote;
+        });
         for(let i = 0; i < question.answers.length; i++){
             elements.push(
                 <div className="ui segment container">
