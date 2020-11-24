@@ -11,6 +11,10 @@ const Header = () => {
             <Link className="item" href="/profile">
                 Profile
             </Link>
+
+            <Link className="item" href="/question">
+                Question Sample Page
+            </Link>
         </div>
     );
 };
