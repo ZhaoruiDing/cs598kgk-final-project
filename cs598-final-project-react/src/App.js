@@ -1,8 +1,8 @@
 import React from 'react';
-import QuestionList from './components/QuestionList';
 import Header from './components/Header';
 import Route from './components/Route';
 import User from './components/Profile';
+import MainPage from './components/MainPage';
 
 const questions = [
     {
@@ -32,7 +32,7 @@ const App = () => {
         <div>
             <Header/>
             <Route path="/">
-                    <QuestionList questions={questions}/>
+                    <MainPage/>
             </Route>
             <Route path="/profile">
                     <User users={users}/>
