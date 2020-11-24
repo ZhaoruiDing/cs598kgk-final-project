@@ -24,11 +24,15 @@ const users = [
     {
         firstName: "Emily",
         lastName: "Black",
-        location: "Chicago",
-        occupation: "professor",
+        city: "Chicago",
+        country: "USA",
+        occupation: "Professor",
+        company: "University of Chicago",
         verified: false,
         expert: true,
         expertField: "Computer Science",
+        upvotes: 223,
+        bio:"A UChicago professor in computer science field. Welcome!",
     }
 ];
 
