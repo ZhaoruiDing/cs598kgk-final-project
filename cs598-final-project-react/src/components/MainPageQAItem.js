@@ -9,8 +9,8 @@ const MainPageQAItem = () => {
 
     return (
     <Container>
+    <Header as='h2'>Why Zhang Zhe is adored by so many people?</Header>
     <BioOverview/>
-    <Header as='h4'>Why Zhang Zhe is adored by so many people?</Header>
     <p>
         Because he can talk lively with Wallace. Wallace is higher than any of you. Over two hundred professors all said Yes!
     </p>
