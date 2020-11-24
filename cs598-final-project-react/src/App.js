@@ -40,7 +40,7 @@ const question = [
             {
                 user: "Eric Ding",
                 userDescription: "UIUC CS Professor",
-                icon: '/images/profile.jpg',
+                icon: "https://i.pravatar.cc/300?img=30",
                 content: "You should never leave Illinois! She is so nice that I will stay here for my rest of life!",
                 upVote: 198,
                 downVote: 10,
@@ -49,7 +49,7 @@ const question = [
             {
                 user: "Alice Gu",
                 userDescription: "UIUC CS Student",
-                icon: '/images/profile.jpg',
+                icon: "https://i.pravatar.cc/300?img=10",
                 content: "I won't leave Illinois since the rent is very cheap here",
                 upVote: 529,
                 downVote: 23,
@@ -58,7 +58,7 @@ const question = [
             {
                 user: "Haoren Chen",
                 userDescription: "",
-                icon: '/images/profile.jpg',
+                icon: "",
                 content: "I will leave Illinois during the winter since it is toooooo cold here and I cannot bear to stay for 1 more second.",
                 upVote: 30,
                 downVote: 32,
@@ -67,7 +67,7 @@ const question = [
             {
                 user: "Anonymous",
                 userDescription: "",
-                icon: '/images/profile.jpg',
+                icon: "",
                 content: "You will never be able to leave Illinois! Never!",
                 upVote: 0,
                 downVote: 189,
