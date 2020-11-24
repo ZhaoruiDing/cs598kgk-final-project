@@ -15,6 +15,9 @@ const Header = () => {
             <Link className="item" href="/question">
                 Question Sample Page
             </Link>
+            <Link className="item" href="/login">
+                Login
+            </Link>
         </div>
     );
 };

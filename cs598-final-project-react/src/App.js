@@ -4,6 +4,7 @@ import Route from './components/Route';
 import User from './components/Profile';
 import MainPage from './components/MainPage';
 import Question from "./components/Question";
+import Login from "./components/Login";
 
 const questions = [
     {
@@ -93,6 +94,9 @@ const App = () => {
             </Route>
             <Route path="/question">
                 <Question question={question}/>
+            </Route>
+            <Route exact path="/login">
+              <Login />
             </Route>
         </div>
     )

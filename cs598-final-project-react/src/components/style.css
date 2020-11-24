@@ -96,7 +96,7 @@ body {
     font-size: 14px;
 }
 .profile-side p i {
-    color: #153fbd;
+    color: #000000;
     margin-right: 7px;
 }
 
@@ -116,7 +116,7 @@ body {
 
 .nav ul li.active,
 .nav ul li:hover {
-    box-shadow: 0px -3px 0px rgba(21, 63, 189, .8) inset;
+    box-shadow: 0px -3px 0px rgba(0, 0, 0, .8) inset;
 }
 .user-body {
     width: 825px;
