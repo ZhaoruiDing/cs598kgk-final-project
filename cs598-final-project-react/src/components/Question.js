@@ -34,7 +34,7 @@ const Question = ({question}) => {
                         </a>
                         <a className="ui label">
                             <i className="exclamation triangle icon"> </i>
-                            {question.answers[i].upVote}
+                            {question.answers[i].misinformation}
                         </a>
                     </div>
                 </div>
