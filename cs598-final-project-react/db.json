@@ -37,8 +37,8 @@
       "content": "blah blah",
       "questionId": 323,
       "userId": 123,
-      "upVote": 2,
-      "downVote": 10,
+      "upVote": 3,
+      "downVote": 20,
       "misinformation": 100
     },
     {
@@ -126,6 +126,12 @@
     },
     {
       "id": 333
+    },
+    {
+      "id": 399,
+      "title": "blah blah",
+      "description": "blah",
+      "userId": 123
     }
   ]
 }
