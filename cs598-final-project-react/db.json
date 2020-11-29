@@ -7,7 +7,7 @@
       "occupation": "UIUC Professor",
       "verified": true,
       "expert field": "Computer Science",
-      "avatar": "https://i.pravatar.cc/300?img=30",
+      "avatar": "https://i.pravatar.cc/300?img=33",
       "upvoteNumber": 50
     },
     {
@@ -17,7 +17,7 @@
       "occupation": "UIUC Student",
       "verified": true,
       "expert field": "Computer Science",
-      "avatar": "https://i.pravatar.cc/300?img=20",
+      "avatar": "https://i.pravatar.cc/300?img=31",
       "upvoteNumber": 100
     },
     {
@@ -63,7 +63,7 @@
       "id": 226,
       "content": "blah blah",
       "questionId": 323,
-      "userId": 123,
+      "userId": 124,
       "upVote": 2,
       "downVote": 10,
       "misinformation": 2
