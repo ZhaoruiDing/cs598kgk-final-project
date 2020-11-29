@@ -93,7 +93,7 @@ const App = () => {
                     <User users={users}/>
             </Route>
             <Route path="/question">
-                <Question question={question}/>
+                <Question />
             </Route>
             <Route exact path="/login">
               <Login />

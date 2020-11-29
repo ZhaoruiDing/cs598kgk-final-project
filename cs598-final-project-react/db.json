@@ -7,8 +7,8 @@
       "occupation": "UIUC Professor",
       "verified": true,
       "expert field": "Computer Science",
-      "avatar": "file/123.jpg",
-      "upvoteNumber": 10
+      "avatar": "https://i.pravatar.cc/300?img=33",
+      "upvoteNumber": 50
     },
     {
       "id": 124,
@@ -17,8 +17,8 @@
       "occupation": "UIUC Student",
       "verified": true,
       "expert field": "Computer Science",
-      "avatar": "file/124.jpg",
-      "upvoteNumber": 10
+      "avatar": "https://i.pravatar.cc/300?img=31",
+      "upvoteNumber": 100
     },
     {
       "id": 125,
@@ -27,7 +27,7 @@
       "occupation": "Amazon employee",
       "verified": false,
       "expert field": "",
-      "avatar": "file/125.jpg",
+      "avatar": "",
       "upvoteNumber": 10
     }
   ],
@@ -37,45 +37,45 @@
       "content": "blah blah",
       "questionId": 323,
       "userId": 123,
-      "upvote": 2,
-      "downVote": 10,
-      "misinformation-report": 100
+      "upVote": 3,
+      "downVote": 20,
+      "misinformation": 100
     },
     {
       "id": 224,
       "content": "blah blah",
       "questionId": 324,
       "userId": 124,
-      "upvote": 198,
+      "upVote": 198,
       "downVote": 5,
-      "misinformation-report": 5
+      "misinformation": 5
     },
     {
       "id": 225,
       "content": "blah blah",
       "questionId": 323,
       "userId": 125,
-      "upvote": 2,
+      "upVote": 2,
       "downVote": 10,
-      "misinformation-report": 0
+      "misinformation": 0
     },
     {
-      "id": 223,
+      "id": 226,
+      "content": "blah blah",
+      "questionId": 323,
+      "userId": 124,
+      "upVote": 2,
+      "downVote": 10,
+      "misinformation": 2
+    },
+    {
+      "id": 227,
       "content": "blah blah",
       "questionId": 323,
       "userId": 123,
-      "upvote": 2,
+      "upVote": 2,
       "downVote": 10,
-      "misinformation-report": 2
-    },
-    {
-      "id": 223,
-      "content": "blah blah",
-      "questionId": 323,
-      "userId": 123,
-      "upvote": 2,
-      "downVote": 10,
-      "miormation-report": 0
+      "misinformation": 0
     }
   ],
   "questions": [
@@ -108,6 +108,12 @@
       "title": "blah blah",
       "description": "blah",
       "userId": 125
+    },
+    {
+      "id": 399,
+      "title": "blah blah",
+      "description": "blah",
+      "userId": 123
     }
   ]
 }
