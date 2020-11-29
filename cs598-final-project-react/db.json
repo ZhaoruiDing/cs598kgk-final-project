@@ -1,25 +1,131 @@
 {
   "users": [
-    {"id": 123, "userName": "Zhaorui Ding", "location": "Chicago", "occupation": "UIUC Professor", "verified": true, "expert field": "Computer Science", "avatar": "file/123.jpg", "upvoteNumber": 10},
-    {"id": 124, "userName": "Siqi Gu", "location": "Chicago", "occupation": "UIUC Student", "verified": true, "expert field": "Computer Science", "avatar": "file/124.jpg", "upvoteNumber": 10},
-    {"id": 125, "userName": "Yichen Yang", "location": "Champaign", "occupation": "Amazon employee", "verified": false, "expert field": "", "avatar": "file/125.jpg", "upvoteNumber": 10}
-    ],
-    
-    "answers": [
-      {"id": 223, "content": "blah blah", "questionId": 323, "userId": 123, "upvote":2, "downVote":10, "misinformation-report": 100},
-      {"id": 224, "content": "blah blah", "questionId": 324, "userId": 124, "upvote":198, "downVote":5, "misinformation-report": 5},
-      {"id": 225, "content": "blah blah", "questionId": 323, "userId": 125, "upvote":2, "downVote":10, "misinformation-report": 0},
-      {"id": 223, "content": "blah blah", "questionId": 323, "userId": 123, "upvote":2, "downVote":10, "misinformation-report": 2},
-      {"id": 223, "content": "blah blah", "questionId": 323, "userId": 123, "upvote":2, "downVote":10, "miormation-report": 0}
-    ],
-
-    "questions": [
-      {"id": 323, "title": "blah blah", "description":"blah", "userId": 123},
-      {"id": 324, "title": "blah blah", "description":"blah", "userId": 123},
-      {"id": 325, "title": "blah blah", "description":"blah", "userId": 124},
-      {"id": 326, "title": "blah blah", "description":"blah", "userId": 124},
-      {"id": 327, "title": "blah blah", "description":"blah", "userId": 125}
-    ]
-      
-      
+    {
+      "id": 123,
+      "userName": "Zhaorui Ding",
+      "location": "Chicago",
+      "occupation": "UIUC Professor",
+      "verified": true,
+      "expert field": "Computer Science",
+      "avatar": "https://i.pravatar.cc/300?img=30",
+      "upvoteNumber": 50
+    },
+    {
+      "id": 124,
+      "userName": "Siqi Gu",
+      "location": "Chicago",
+      "occupation": "UIUC Student",
+      "verified": true,
+      "expert field": "Computer Science",
+      "avatar": "https://i.pravatar.cc/300?img=20",
+      "upvoteNumber": 100
+    },
+    {
+      "id": 125,
+      "userName": "Yichen Yang",
+      "location": "Champaign",
+      "occupation": "Amazon employee",
+      "verified": false,
+      "expert field": "",
+      "avatar": "",
+      "upvoteNumber": 10
+    }
+  ],
+  "answers": [
+    {
+      "id": 223,
+      "content": "blah blah",
+      "questionId": 323,
+      "userId": 123,
+      "upVote": 2,
+      "downVote": 10,
+      "misinformation": 100
+    },
+    {
+      "id": 224,
+      "content": "blah blah",
+      "questionId": 324,
+      "userId": 124,
+      "upVote": 198,
+      "downVote": 5,
+      "misinformation": 5
+    },
+    {
+      "id": 225,
+      "content": "blah blah",
+      "questionId": 323,
+      "userId": 125,
+      "upVote": 2,
+      "downVote": 10,
+      "misinformation": 0
+    },
+    {
+      "id": 226,
+      "content": "blah blah",
+      "questionId": 323,
+      "userId": 123,
+      "upVote": 2,
+      "downVote": 10,
+      "misinformation": 2
+    },
+    {
+      "id": 227,
+      "content": "blah blah",
+      "questionId": 323,
+      "userId": 123,
+      "upVote": 2,
+      "downVote": 10,
+      "misinformation": 0
+    }
+  ],
+  "questions": [
+    {
+      "id": 323,
+      "title": "blah blah",
+      "description": "blah",
+      "userId": 123
+    },
+    {
+      "id": 324,
+      "title": "blah blah",
+      "description": "blah",
+      "userId": 123
+    },
+    {
+      "id": 325,
+      "title": "blah blah",
+      "description": "blah",
+      "userId": 124
+    },
+    {
+      "id": 326,
+      "title": "blah blah",
+      "description": "blah",
+      "userId": 124
+    },
+    {
+      "id": 327,
+      "title": "blah blah",
+      "description": "blah",
+      "userId": 125
+    },
+    {
+      "id": 328
+    },
+    {
+      "id": 329
+    },
+    {
+      "id": 330
+    },
+    {
+      "id": 331
+    },
+    {
+      "id": 332
+    },
+    {
+      "id": 333
+    }
+  ]
 }
