@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Icon, Item, Image} from 'semantic-ui-react'
 import axios from 'axios'
 
-const BioOverview = ({userId} ) => {
+const BioOverview = ({userId}) => {
   const [userInfo, setUserInfo] = useState(null);
   useEffect(()=>{
     const fetchUserInfo = async (userId) => {
@@ -10,26 +10,26 @@ const BioOverview = ({userId} ) => {
       console.log("check data", data)
       setUserInfo(data);
     }
-
+    
     fetchUserInfo(userId);
   }, []);
 
-  useState(()=>{
+  useEffect(()=>{
     console.log("checkstate",userInfo);
-  }, [userInfo]);
+  }, [userInfo, userId]);
 
   return (
   <Item.Group>
     <Item>
       <Image className="ui tiny circular image" size='tiny' src='https://i.pravatar.cc/300?img=12' />
       <Item.Content>
-        <Item.Header as='a'>Zhang Zhe</Item.Header>
+        <Item.Header as='a'>{userInfo?userInfo.userName : null}</Item.Header>
         <Item.Meta>Description</Item.Meta>
         <Item.Description>
-          The elder, Honor Professor, Former Chairman
+          {userInfo && `${userInfo.occupation} ${userInfo.expertField}`}
         </Item.Description>
         <Item.Extra>
-        <Icon color='green' name='check' /> 121 Votes
+        <Icon color='green' name='check' />
         </Item.Extra>
       </Item.Content>
     </Item>
