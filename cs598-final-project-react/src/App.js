@@ -1,10 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
-import Route from './components/Route';
 import User from './components/Profile';
 import MainPage from './components/MainPage';
 import Question from "./components/Question";
 import Login from "./components/Login";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route, 
+    Redirect } from 'react-router-dom';
 
 const questions = [
     {
@@ -86,18 +90,6 @@ const App = () => {
     return (
         <div>
             <Header/>
-            <Route path="/">
-                    <MainPage/>
-            </Route>
-            <Route path="/profile">
-                    <User users={users}/>
-            </Route>
-            <Route path="/question">
-                <Question />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
         </div>
     )
 };

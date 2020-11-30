@@ -16,9 +16,9 @@ class Question extends Component {
 
     componentDidMount() {
         axios.all([
-            axios.get("http://localhost:2000/questions/323"),
-            axios.get("http://localhost:2000/questions/323/answers"),
-            axios.get("http://localhost:2000/users/")
+            axios.get("http://localhost:4000/questions/323"),
+            axios.get("http://localhost:4000/questions/323/answers"),
+            axios.get("http://localhost:4000/users/")
         ]).then(axios.spread((...responses) => {
             this.setState({
                 isLoaded: true,
