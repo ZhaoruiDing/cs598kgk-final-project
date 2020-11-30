@@ -57,6 +57,7 @@ const MainPage = () => {
       const {id, title} = questionWithFirstAnswer.question;
       const content = questionWithFirstAnswer.firstAnswer ? questionWithFirstAnswer.firstAnswer.content : null;
       const userId = questionWithFirstAnswer.userId;
+
       return (
       <Grid.Row key={id}>
         <Grid.Column width={3}>
