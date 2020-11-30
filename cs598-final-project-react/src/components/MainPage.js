@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Grid, Image } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
 import MainPageQAItem from './MainPageQAItem'
 import axios from 'axios'
@@ -50,6 +50,10 @@ const MainPage = () => {
   useEffect(()=> {
     console.log(questionsWithFirstAnswer);
     const listItems = questionsWithFirstAnswer.map((questionWithFirstAnswer) => {
+      if (!questionWithFirstAnswer.firstAnswer) {
+        console.log("it's null")
+        return null;
+      }
       const {id, title} = questionWithFirstAnswer.question;
       const content = questionWithFirstAnswer.firstAnswer ? questionWithFirstAnswer.firstAnswer.content : null;
       const userId = questionWithFirstAnswer.userId;
