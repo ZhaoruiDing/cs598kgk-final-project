@@ -8,7 +8,7 @@ const MainPageQAItem = ({questionTitle, questionId, userId, answerContent}) => {
     let history = useHistory();
     const pathname = `/question/${questionId}`;
     console.log(typeof(userId), questionId, pathname);
-    const onClickQuestionTitle = (questionId)=>{ history.push({pathname, state: {questionId}})};
+    const onClickQuestionTitle = ()=>{ history.push(pathname)};
 
     return (
     <Container>
