@@ -76,12 +76,15 @@ class User extends Component {
         this.state = {
             error: null,
             isLoaded: false,
-            user: []
+            user: null
         };
     }
 
     componentDidMount() {
-        let url = "http://localhost:4000/users/" + this.props.match.params.id;
+        // var url;
+        console.log(this.props.match.params.id);
+        const id = this.props.match.params.id ? this.props.match.params.id : localStorage.getItem('userId');
+        const url = `http://localhost:4000/users/${id}`;
         axios.all([
             axios.get(url),
         ]).then(axios.spread((...responses) => {

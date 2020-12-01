@@ -48,11 +48,11 @@ const LoginForm = ({handleLogin}) => {
   <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
       <Header as='h2' color='teal' textAlign='center'>
-         Log-in to your account
+         Sign-up your account
       </Header>
       <Form size='large' onSubmit={onSubmit}>
         <Segment stacked>
-          <Form.Input fluid icon='user' iconPosition='left' placeholder='Your user ID' onChange={handleuserIdChange}/>
+          <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' onChange={handleuserIdChange}/>
           <Form.Input
             fluid
             icon='lock'

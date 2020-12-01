@@ -12,6 +12,7 @@ import User from './Profile';
 import MainPage from './MainPage';
 import Question from "./Question";
 import Login from "./Login";
+import Signup from './Signup';
 
 const user_real = [{
     id: 123,
@@ -40,20 +41,26 @@ const users = [
     }
 ];
 
-const Header = () => {
+const Header = ({isLoggedIn, handleLogin, handleLogout}) => {
     return (
         <Router>
         <div className="ui secondary pointing menu">
             <Link className="item" to="/">
                 Main Page
             </Link>
-
-            <Link className="item" to="/profile">
+            {isLoggedIn?
+                <Link className="item" to="/profile">
                 Profile
-            </Link>
+                </Link> : null
+            }
+            {isLoggedIn?
+            <Link className="item" to="/login" onClick={handleLogout}>
+                Logout
+            </Link> : 
             <Link className="item" to="/login">
                 Login
             </Link>
+        }
         </div>
 
 
@@ -61,10 +68,13 @@ const Header = () => {
                 <Route exact path="/">
                     <MainPage/>
                 </Route>
-                <Route path={`/profile/:id`} component={User} />
+                <Route path={`/profile/:id?`} component={User} />
                 <Route path={`/question/:id`} component={Question} />
                 <Route path="/login">
-                    <Login />
+                    <Login handleLogin={handleLogin}/>
+                </Route>
+                <Route path="/signup">
+                    <Signup/>
                 </Route>
             </Switch>
         </Router>

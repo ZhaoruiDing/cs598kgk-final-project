@@ -8,7 +8,8 @@
       "verified": true,
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=33",
-      "upvoteNumber": 50
+      "upvoteNumber": 50,
+      "password": "123"
     },
     {
       "id": 124,
@@ -18,7 +19,8 @@
       "verified": false,
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=31",
-      "upvoteNumber": 100
+      "upvoteNumber": 100,
+      "password": "123"
     },
     {
       "id": 125,
@@ -28,7 +30,8 @@
       "verified": false,
       "expertField": "",
       "avatar": "",
-      "upvoteNumber": 10
+      "upvoteNumber": 10,
+      "password": "123"
     }
   ],
   "answers": [
