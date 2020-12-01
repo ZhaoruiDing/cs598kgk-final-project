@@ -52,7 +52,7 @@ const LoginForm = ({handleLogin}) => {
       </Header>
       <Form size='large' onSubmit={onSubmit}>
         <Segment stacked>
-          <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' onChange={handleuserIdChange}/>
+          <Form.Input fluid icon='user' iconPosition='left' placeholder='Your user ID' onChange={handleuserIdChange}/>
           <Form.Input
             fluid
             icon='lock'
