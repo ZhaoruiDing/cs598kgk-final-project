@@ -13,6 +13,17 @@ import MainPage from './MainPage';
 import Question from "./Question";
 import Login from "./Login";
 
+const user_real = [{
+    id: 123,
+    userName: "Zhaorui Ding",
+    location: "Chicago",
+    occupation: "UIUC Professor",
+    verified: true,
+    expertField: "Computer Science",
+    avatar: "https://i.pravatar.cc/300?img=33",
+    upvoteNumber: 50
+}]
+
 const users = [
     {
         firstName: "Emily",
@@ -40,10 +51,6 @@ const Header = () => {
             <Link className="item" to="/profile">
                 Profile
             </Link>
-
-            <Link className="item" to="/question/323">
-                Question Sample Page
-            </Link>
             <Link className="item" to="/login">
                 Login
             </Link>
@@ -57,8 +64,7 @@ const Header = () => {
                 <Route path="/profile">
                     <User users={users}/>
                 </Route>
-                <Route path={`/question/:id`}>
-                    <Question />
+                <Route path={`/question/:id`} component={Question}>
                 </Route>
                 <Route path="/login">
                     <Login />

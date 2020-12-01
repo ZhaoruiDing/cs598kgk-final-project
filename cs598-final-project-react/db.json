@@ -15,7 +15,7 @@
       "userName": "Siqi Gu",
       "location": "Chicago",
       "occupation": "UIUC Student",
-      "verified": true,
+      "verified": false,
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=31",
       "upvoteNumber": 100

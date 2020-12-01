@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import userImg from "../images/user.png";
 import axios from "axios";
+import {Icon, Image, Item} from "semantic-ui-react";
+import BioOverview from "./BioOverview";
 
 class Question extends Component {
     constructor() {
@@ -15,9 +17,10 @@ class Question extends Component {
     }
 
     componentDidMount() {
+        let url = "http://localhost:4000/questions/" + this.props.match.params.id;
         axios.all([
-            axios.get("http://localhost:4000/questions/323"),
-            axios.get("http://localhost:4000/questions/323/answers"),
+            axios.get(url),
+            axios.get(url + "/answers"),
             axios.get("http://localhost:4000/users/")
         ]).then(axios.spread((...responses) => {
             this.setState({
@@ -35,6 +38,11 @@ class Question extends Component {
     }
 
     render() {
+        let icon = [
+            <Item.Extra>
+                <Icon color='green' name='check' />
+            </Item.Extra>
+        ]
         const { error, isLoaded, question, answers, users } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
@@ -65,15 +73,7 @@ class Question extends Component {
                     <div className="ui segment container">
                         <div className="ui horizontal list">
                             <div className="item">
-                                <img className="ui tiny circular image" src={image} alt=""/>
-                                <div className="content">
-                                    <div className="ui header" style={{marginBottom: 10}}>
-                                        {userInfo.userName}
-                                    </div>
-                                    <div>
-                                        {userInfo.occupation}
-                                    </div>
-                                </div>
+                                {<BioOverview userId={userId}/>}
                             </div>
                         </div>
                         <p style={{fontSize: 18, marginTop: 10}}>
