@@ -61,11 +61,8 @@ const Header = () => {
                 <Route exact path="/">
                     <MainPage/>
                 </Route>
-                <Route path="/profile">
-                    <User users={users}/>
-                </Route>
-                <Route path={`/question/:id`} component={Question}>
-                </Route>
+                <Route path={`/profile/:id`} component={User} />
+                <Route path={`/question/:id`} component={Question} />
                 <Route path="/login">
                     <Login />
                 </Route>
