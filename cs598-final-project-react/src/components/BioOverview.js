@@ -35,7 +35,7 @@ const BioOverview = ({userId}) => {
     <Item>
       <Image className="ui tiny circular image" size='tiny' src={userInfo && userInfo.avatar?userInfo.avatar : userImg} />
       <Item.Content>
-        <Link className="header" as='a' to="/profile">
+        <Link className="header" as='a' to={userInfo && `/profile/${userInfo.id}`}>
           {userInfo?userInfo.userName : null}
         </Link>
         <Item.Description>

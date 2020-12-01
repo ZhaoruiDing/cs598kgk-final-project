@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import "./style.css";
 import "../font/css/all.css";
-import profileImg from '../images/profile.jpg';
 import {Container, Icon, Item} from "semantic-ui-react";
 import axios from "axios";
 import userImg from "../images/user.png";
-import BioOverview from "./BioOverview";
 
 // const User = ({users}) => {
 //   const renderedUsers = users.map(user => {
@@ -114,30 +112,30 @@ class User extends Component {
                           <div className="container">
                               <div className="profile-header">
                                   <div className="profile-img">
-                                      <img src={profileImg} width="200" alt=""/>
+                                      <img src={user.avatar ? user.avatar : userImg} width="200" alt=""/>
                                   </div>
                                   <div className="profile-nav-info">
-                                      <h3 className="user-name">{user.firstName} {user.lastName}</h3>
+                                      <h3 className="user-name">{user.userName}</h3>
                                       <div className="location">
-                                          <p className="state">{user.city},</p>
-                                          <span className="country">{user.country}</span>
+                                          <p className="state">{user.location}</p>
                                       </div>
                                   </div>
+                                  {user.verified &&
                                   <div className="profile-option">
                                       <div className="badge">
                                           <i className="fa fa-certificate" aria-hidden="true"></i>
                                       </div>
-                                  </div>
+                                  </div>}
                               </div>
                               <div className="main-bd">
                                   <div className="left-side">
                                       <div className="profile-side">
-                                          <p className="location"><i className="fa fa-location-arrow"></i>{user.city}, {user.country}</p>
+                                          <p className="location"><i className="fa fa-location-arrow"></i>{user.location}</p>
                                           <p className="occupation"><i className="fa fa-id-card"></i>{user.occupation}</p>
                                           <p className="company"><i className="fa fa-user-circle" aria-hidden="true"></i>{user.company}</p>
-                                          <p className="verified"><i className="fa fa-check" aria-hidden="true"></i>Verified User</p>
+                                          { user.verified && <p className="verified"><i className="fa fa-check" aria-hidden="true"></i>Verified User</p>}
                                           <p className="expert"><i className="fa fa-star" aria-hidden="true"></i>{user.expertField}</p>
-                                          <p className="upvote"><i className="fa fa-heart" aria-hidden="true"></i>{user.upvotes} Upvotes</p>
+                                          <p className="upvote"><i className="fa fa-heart" aria-hidden="true"></i>{user.upvoteNumber} Upvotes</p>
                                           <div className="user-bio">
                                               <h3>Bio</h3>
                                               <p className="bio">{user.bio}</p>
