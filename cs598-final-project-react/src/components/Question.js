@@ -55,6 +55,9 @@ class Question extends Component {
     }
 
     handleClick (answer_id, action_type) { // action_type: 1: upVote, 2: downVote, 3: misinformation
+        if(localStorage.getItem("userId") === null){
+            return;
+        }
         let clicked = this.state.clicked;
         if (clicked[answer_id].some(this.checkClick)){
             return;
