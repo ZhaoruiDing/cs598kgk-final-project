@@ -136,28 +136,28 @@
       "title": "Is a career in computer science really worth it?",
       "description": "I worked in cs related fields but I am worried if my effort worth it.",
       "userId": 1,
-      "category":["Computer Science"]
+      "category":{"Computer Science"}
     },
     {
       "id": 2,
       "title": "What are some career paths for a Computer Science major?",
       "description": "I am a student in cs major so I wonder if there are some career options for me.",
       "userId": 2,
-      "category":["Computer Science"]
+      "category":{"Computer Science"}
     },
     {
       "id": 4,
       "title": "Why should I study economics?",
       "description": "As title.",
       "userId": 4,
-      "category":["Economics"]
+      "category":{"Economics"}
     },
     {
       "id": 5,
       "title": "How do I control hair loss and simultaneously increase hair growth?",
       "description": "My hair is gone... How can I save my hair?",
       "userId": 5,
-      "category":["Health"]
+      "category":{"Health"}
     }
   ]
 }
