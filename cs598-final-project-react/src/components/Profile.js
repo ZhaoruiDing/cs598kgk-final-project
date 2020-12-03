@@ -89,6 +89,7 @@ class User extends Component {
                                   <div className="left-side">
                                       <div className="profile-side">
                                           <p className="location"><i className="fa fa-location-arrow"></i>{user.location}</p>
+                                          <p className="email"><i className="fa fa-envelope"></i>{user.email}</p>
                                           <p className="occupation"><i className="fa fa-id-card"></i>{user.occupation}</p>
                                           { user.verified && <p className="verified"><i className="fa fa-check" aria-hidden="true"></i>Verified User</p>}
                                           <p className="expert"><i className="fa fa-star" aria-hidden="true"></i>{user.expertField}</p>
