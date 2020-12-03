@@ -14,32 +14,6 @@ import Question from "./Question";
 import Login from "./Login";
 import Signup from './Signup';
 
-const user_real = [{
-    id: 123,
-    userName: "Zhaorui Ding",
-    location: "Chicago",
-    occupation: "UIUC Professor",
-    verified: true,
-    expertField: "Computer Science",
-    avatar: "https://i.pravatar.cc/300?img=33",
-    upvoteNumber: 50
-}]
-
-const users = [
-    {
-        firstName: "Emily",
-        lastName: "Black",
-        city: "Chicago",
-        country: "USA",
-        occupation: "Professor",
-        company: "University of Chicago",
-        verified: false,
-        expert: true,
-        expertField: "Computer Science",
-        upvotes: 223,
-        bio:"A UChicago professor in computer science field. Welcome!",
-    }
-];
 
 const Header = ({isLoggedIn, handleLogin, handleLogout}) => {
     return (

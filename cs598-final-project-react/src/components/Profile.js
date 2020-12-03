@@ -4,71 +4,9 @@ import "../font/css/all.css";
 import {Container, Icon, Item} from "semantic-ui-react";
 import axios from "axios";
 import userImg from "../images/user.png";
-
-// const User = ({users}) => {
-//   const renderedUsers = users.map(user => {
-//       return (
-//           <Container>
-//               <Item.Group>
-//                   <Item>
-//                       <div className="container">
-//                           <div className="profile-header">
-//                               <div className="profile-img">
-//                                   <img src={profileImg} width="200" alt=""/>
-//                               </div>
-//                               <div className="profile-nav-info">
-//                                   <h3 className="user-name">{user.firstName} {user.lastName}</h3>
-//                                   <div className="location">
-//                                       <p className="state">{user.city},</p>
-//                                       <span className="country">{user.country}</span>
-//                                   </div>
-//                               </div>
-//                               <div className="profile-option">
-//                                   <div className="badge">
-//                                       <i className="fa fa-certificate" aria-hidden="true"></i>
-//                                   </div>
-//                               </div>
-//                           </div>
-//                           <div className="main-bd">
-//                               <div className="left-side">
-//                                   <div className="profile-side">
-//                                       <p className="location"><i className="fa fa-location-arrow"></i>{user.city}, {user.country}</p>
-//                                       <p className="occupation"><i className="fa fa-id-card"></i>{user.occupation}</p>
-//                                       <p className="company"><i className="fa fa-user-circle" aria-hidden="true"></i>{user.company}</p>
-//                                       <p className="verified"><i className="fa fa-check" aria-hidden="true"></i>Verified User</p>
-//                                       <p className="expert"><i className="fa fa-star" aria-hidden="true"></i>{user.expertField}</p>
-//                                       <p className="upvote"><i className="fa fa-heart" aria-hidden="true"></i>{user.upvotes} Upvotes</p>
-//                                       <div className="user-bio">
-//                                           <h3>Bio</h3>
-//                                           <p className="bio">{user.bio}</p>
-//                                       </div>
-//                                   </div>
-//                               </div>
-//                               <div className="user-right">
-//                                   <div className="nav">
-//                                       <ul>
-//                                           <li onClick="tabs(0)" className="user-ques active">Questions</li>
-//                                       </ul>
-//                                   </div>
-//                                   <div className="user-body">
-//                                       <div className="user-questions tab">
-//                                           <h1>Your Questions</h1>
-//                                           <p>123.</p>
-//                                       </div>
-//                                   </div>
-//                               </div>
-//                           </div>
-//                       </div>
-//                   </Item>
-//               </Item.Group>
-//           </Container>
-//       )
-//   });
-//
-//   return (<div>
-//       {renderedUsers}
-//   </div>)
-// }
+import {
+    Link
+} from "react-router-dom";
 
 class User extends Component {
     constructor() {
@@ -76,7 +14,8 @@ class User extends Component {
         this.state = {
             error: null,
             isLoaded: false,
-            user: null
+            user: null,
+            questions: null
         };
     }
 
@@ -87,10 +26,12 @@ class User extends Component {
         const url = `http://localhost:4000/users/${id}`;
         axios.all([
             axios.get(url),
+            axios.get(url + "/questions"),
         ]).then(axios.spread((...responses) => {
             this.setState({
                 isLoaded: true,
-                user: responses[0].data
+                user: responses[0].data,
+                questions: responses[1].data
             });
         })).catch(error => {
             this.setState({
@@ -101,13 +42,27 @@ class User extends Component {
     }
 
     render() {
-        const { error, isLoaded, user } = this.state;
+        const { error, isLoaded, user, questions } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
             return <div>Loading...</div>;
         } else {
             console.log(user);
+            console.log(questions);
+            let myquestions = [];
+            for( let i = 0 ; i < questions.length; i++){
+                myquestions.push(
+                    <div className="ui container segment" >
+                        <Link className="ui header h1" style={{fontSize: 50}} to={`/question/${questions[i].id}`}>
+                            {questions[i].title}
+                        </Link>
+                        <div>
+                            {questions[i].description}
+                        </div>
+                    </div>
+                );
+            }
             return (
                 <Container>
                   <Item.Group>
@@ -135,14 +90,9 @@ class User extends Component {
                                       <div className="profile-side">
                                           <p className="location"><i className="fa fa-location-arrow"></i>{user.location}</p>
                                           <p className="occupation"><i className="fa fa-id-card"></i>{user.occupation}</p>
-                                          <p className="company"><i className="fa fa-user-circle" aria-hidden="true"></i>{user.company}</p>
                                           { user.verified && <p className="verified"><i className="fa fa-check" aria-hidden="true"></i>Verified User</p>}
                                           <p className="expert"><i className="fa fa-star" aria-hidden="true"></i>{user.expertField}</p>
                                           <p className="upvote"><i className="fa fa-heart" aria-hidden="true"></i>{user.upvoteNumber} Upvotes</p>
-                                          <div className="user-bio">
-                                              <h3>Bio</h3>
-                                              <p className="bio">{user.bio}</p>
-                                          </div>
                                       </div>
                                   </div>
                                   <div className="user-right">
@@ -152,9 +102,8 @@ class User extends Component {
                                           </ul>
                                       </div>
                                       <div className="user-body">
-                                          <div className="user-questions tab">
-                                              <h1>Your Questions</h1>
-                                              <p>123.</p>
+                                          <div className="user-questions tab segment">
+                                              {myquestions}
                                           </div>
                                       </div>
                                   </div>

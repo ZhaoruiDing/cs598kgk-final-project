@@ -46,11 +46,11 @@ const LoginForm = ({ handleLogin }) => {
     axios
       .post(`http://localhost:4000/users`, {
         id: userId,
-        username: username,
+        userName: username,
         location: location,
         verified: false,
         expertField: expertField,
-        avatar: `https://i.pravatar.cc/300?img=${userId % 30}`,
+        avatar: "",
         upvoteNumber: 0,
         password: password
       })
