@@ -5,11 +5,11 @@ first, go to cs598-final-project-react folder:
 
 `cd cs598-final-project-react`
 
-then in one terminal, run this command:
+in one terminal, run following command:
 
 `npm run json:server`
 
-and
+then open another terminal, run following command:
 
 `npm start`
 
