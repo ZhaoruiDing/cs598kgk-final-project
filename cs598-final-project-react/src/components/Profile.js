@@ -63,6 +63,11 @@ class User extends Component {
                     </div>
                 );
             }
+            let expert_message = (
+                <div className="ui ignored info message">
+                    <i className="icon check"></i>
+                    Trustworthy answer by verified {user.expertField} Expert
+                </div>)
             return (
                 <Container>
                   <Item.Group>
@@ -77,6 +82,7 @@ class User extends Component {
                                       <div className="location">
                                           <p className="state">{user.location}</p>
                                       </div>
+                                      {user.verified && expert_message}
                                   </div>
                                   {user.verified &&
                                   <div className="profile-option">
