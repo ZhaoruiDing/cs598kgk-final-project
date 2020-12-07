@@ -12,7 +12,7 @@ class Question extends Component {
             isLoaded: false,
             question: [],
             answers: [],
-            users: [],
+            users_dict: [],
             clicked: []
         };
     }
@@ -37,6 +37,14 @@ class Question extends Component {
         return clicked_list;
     }
 
+    create_user_dict(users){
+        let users_dict = {}
+        for(let i = 0 ; i < users.length; i++){
+            users_dict[users[i].id] = users[i];
+        }
+        return users_dict
+    }
+
     componentDidMount() {
         let url = "http://localhost:4000/questions/" + this.props.match.params.id;
         axios.all([
@@ -51,7 +59,7 @@ class Question extends Component {
                     // here we can set some useful sorting algorithms
                     return b.upVote - a.upVote;
                 }),
-                users: responses[2].data,
+                users_dict: this.create_user_dict(responses[2].data),
                 clicked: this.create_clicked(responses[1].data)
             });
         })).catch(error => {
@@ -78,34 +86,38 @@ class Question extends Component {
         }
         let answers = this.state.answers;
         let answer = answers[answer_position];
+        let user_id = answer.userId;
+        let users_dict = this.state.users_dict;
+        let user = users_dict[user_id];
         if(action_type === 1){
-            answer.upVote += 1
+            answer.upVote += 1;
+            user.upvoteNumber += 1;
         }else if(action_type === 2){
-            answer.downVote += 1
+            answer.downVote += 1;
+            user.downVoteNumber += 1;
         }else {
-            answer.misinformation += 1
+            answer.misinformation += 1;
+            user.misinformationNumber += 1;
         }
         answer.voteUsers[localStorage.getItem("userId")] = action_type;
         answers[answer_position] = answer;
+        users_dict[user_id] = user;
         this.setState({
             answers: answers,
+            users_dict: users_dict,
             clicked: clicked
         });
         axios.put(`http://localhost:4000/answers/${answer.id}`, answer);
+        axios.put( `http://localhost:4000/users/${user_id}`, user);
     }
 
     render() {
-        const { error, isLoaded, question, answers, users, clicked } = this.state;
+        const { error, isLoaded, question, answers, users_dict, clicked } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
             return <div>Loading...</div>;
         } else {
-
-            let users_dict = {}
-            for(let i = 0 ; i < users.length; i++){
-                users_dict[users[i].id] = users[i];
-            }
             let answers_div = [];
             for(let i = 0; i < answers.length; i++){
                 console.log(clicked);

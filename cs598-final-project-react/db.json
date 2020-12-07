@@ -9,7 +9,9 @@
       "email": "1@g.com",
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=33",
-      "upvoteNumber": 50,
+      "upvoteNumber": 51,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123"
     },
     {
@@ -22,6 +24,8 @@
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=31",
       "upvoteNumber": 100,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123"
     },
     {
@@ -34,6 +38,8 @@
       "expertField": "",
       "avatar": "https://i.pravatar.cc/300?img=12",
       "upvoteNumber": 10,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123"
     },
     {
@@ -45,6 +51,8 @@
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=19",
       "upvoteNumber": 0,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123"
     },
     {
@@ -56,6 +64,8 @@
       "expertField": "",
       "avatar": "",
       "upvoteNumber": 0,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123"
     },
     {
@@ -68,6 +78,8 @@
       "expertField": "Health",
       "avatar": "https://i.pravatar.cc/300?img=1",
       "upvoteNumber": 5,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123"
     },
     {
@@ -80,6 +92,8 @@
       "expertField": "Economics",
       "avatar": "https://i.pravatar.cc/300?img=9",
       "upvoteNumber": 10,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123"
     },
     {
@@ -92,6 +106,8 @@
       "expertField": "Food",
       "avatar": "https://i.pravatar.cc/300?img=6",
       "upvoteNumber": 7,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123"
     },
     {
@@ -103,6 +119,8 @@
       "expertField": "Chess",
       "avatar": "https://cdn.chess24.com/LFONAgMVRvuMbE_V7EEqBA/original/beth.jpg",
       "upvoteNumber": 0,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123"
     }
   ],
@@ -124,10 +142,12 @@
       "content": "Software engineering and programming jobs represent the typical career path for a computer science major. Nonetheless, careers in computer science evolve at a staggering rate. Job titles like Data Scientist and Big Data Engineer did not exist ten years ago. I can still see growth in data science jobs in the upcoming decade. To be prepared for such jobs, a data scientist needs to master four main skills: \n (1) Programming: a data scientist must be proficient in one or more high level programming languages like C/C++ and Java as well as major scripting languages such as Python and R. \n (2) Database / SQL: a data scientist must be able to manage, maintain, and retrieve data stored in large-scale data databases. Hence, learning SQL, as the most widely-used query language, is also becoming a must. \n (3) Statistics: a data scientist must be able to test various hypotheses on data. She cannot do that without solid understanding of statistical terminology such as Mean, Standard Deviation, P-value, and the Null Hypothesis… \n (4) Machine learning: a data scientist may need to build a machine learning on the input data to predict new unseen patterns. For instance, a data scientist at Netflix may leverage machine learning to predict the next movie you may want to watch. Such prediction model is one of many applications of machine learning theory.",
       "questionId": 2,
       "userId": 1,
-      "upVote": 199,
+      "upVote": 201,
       "downVote": 5,
       "misinformation": 5,
-      "voteUsers": {}
+      "voteUsers": {
+        "1": 1
+      }
     },
     {
       "id": 3,
@@ -175,7 +195,7 @@
     },
     {
       "id": 7,
-      "content":"ADVICE FOR MY CHILDREN ... A True Story: \n Many years ago, after a day of great wailing and gnashing of teeth in the Rogers household, I decided to sit my two oldest boys down (then aged 8 and 10) and give them information most parents don’t take the time to explain to their children: \n 1. Please realize, you haven't had an original thought in that tiny little brain of yours. All the things you're thinking have already been thunk of before. \n 2. All the things you're contemplating doing didn't work any better for your mother and me when we were your age. \n 3. Yes. Believe it or not we WERE once your age, so we can anticipate your next move even before you do. \n 4. You may think you're being really creative, but I feel compelled to warn you that I always know when you're lying to me. Always. \n 5. You are correct when you say It (whatever it is) isn't fair. Life frequently isn't fair. Fair is a place where you eat fried food and zoom around on poorly-maintained, over-priced rides until said fried food is forcefully expelled from your stomach. What you'll receive from your mother and me is equity and justice in our ultimate answer to your dilemma.",
+      "content": "ADVICE FOR MY CHILDREN ... A True Story: \n Many years ago, after a day of great wailing and gnashing of teeth in the Rogers household, I decided to sit my two oldest boys down (then aged 8 and 10) and give them information most parents don’t take the time to explain to their children: \n 1. Please realize, you haven't had an original thought in that tiny little brain of yours. All the things you're thinking have already been thunk of before. \n 2. All the things you're contemplating doing didn't work any better for your mother and me when we were your age. \n 3. Yes. Believe it or not we WERE once your age, so we can anticipate your next move even before you do. \n 4. You may think you're being really creative, but I feel compelled to warn you that I always know when you're lying to me. Always. \n 5. You are correct when you say It (whatever it is) isn't fair. Life frequently isn't fair. Fair is a place where you eat fried food and zoom around on poorly-maintained, over-priced rides until said fried food is forcefully expelled from your stomach. What you'll receive from your mother and me is equity and justice in our ultimate answer to your dilemma.",
       "questionId": 6,
       "userId": 3,
       "upVote": 31,
@@ -185,7 +205,7 @@
     },
     {
       "id": 8,
-      "content":"I don't know why anyone would soak them overnight. I put mine in an ice water bath from 2-4 hours with a couple of tablespoons of distilled white vinegar. I drain them, dry them and double fry them. Tastes better than any restaurant fries! Stays crispy on the outside and tender, flaky on the inside. \n I learned this technique a few years ago (the double fry method) after searching the internet for restaurant quality fries. Ree Drummond - The Pioneer Woman has a fool-proof technique as well. After soaking them to remove most of the starch, draining then drying them VERY WELL, Set your fryer at 300°F (or use a thermometer in a pot of oil) and fry them for 3–4 minutes. This is called blanching and you do this in batches so you may have a few small batches depending on how many people you are making them for. \n After you are done blanching, turn the thermostat (or fire) up to 400°F and fry the first batch until golden brown and make sure the oil is at 400° before you fry each batch. \n Season with salt, pepper and or malt vinegar and you just made yourself some better than restaurant quality fries! \n Don't cover your fries after the final fry, this will make them soggy and after you start the final fry, it moves pretty quickly and the other fries will stay hot with each addition. And the vinegar helps them to maintain their color and texture.",
+      "content": "I don't know why anyone would soak them overnight. I put mine in an ice water bath from 2-4 hours with a couple of tablespoons of distilled white vinegar. I drain them, dry them and double fry them. Tastes better than any restaurant fries! Stays crispy on the outside and tender, flaky on the inside. \n I learned this technique a few years ago (the double fry method) after searching the internet for restaurant quality fries. Ree Drummond - The Pioneer Woman has a fool-proof technique as well. After soaking them to remove most of the starch, draining then drying them VERY WELL, Set your fryer at 300°F (or use a thermometer in a pot of oil) and fry them for 3–4 minutes. This is called blanching and you do this in batches so you may have a few small batches depending on how many people you are making them for. \n After you are done blanching, turn the thermostat (or fire) up to 400°F and fry the first batch until golden brown and make sure the oil is at 400° before you fry each batch. \n Season with salt, pepper and or malt vinegar and you just made yourself some better than restaurant quality fries! \n Don't cover your fries after the final fry, this will make them soggy and after you start the final fry, it moves pretty quickly and the other fries will stay hot with each addition. And the vinegar helps them to maintain their color and texture.",
       "questionId": 7,
       "userId": 8,
       "upVote": 3,
@@ -195,7 +215,7 @@
     },
     {
       "id": 9,
-      "content":"This is a super stupid question.",
+      "content": "This is a super stupid question.",
       "questionId": 8,
       "userId": 2,
       "upVote": 2,
