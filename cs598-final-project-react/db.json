@@ -9,8 +9,8 @@
       "email": "1@g.com",
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=33",
-      "upvoteNumber": 51,
-      "downVoteNumber": 0,
+      "upvoteNumber": 85,
+      "downVoteNumber": 11,
       "misinformationNumber": 0,
       "password": "123"
     },
@@ -23,8 +23,8 @@
       "email": "2@g.com",
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=31",
-      "upvoteNumber": 100,
-      "downVoteNumber": 0,
+      "upvoteNumber": 33,
+      "downVoteNumber": 15,
       "misinformationNumber": 0,
       "password": "123"
     },
@@ -33,12 +33,12 @@
       "userName": "Jeff Brian",
       "location": "Champaign",
       "occupation": "Amazon employee",
-      "verified": false,
+      "verified": true,
       "email": "3@g.com",
-      "expertField": "",
+      "expertField": "Technology",
       "avatar": "https://i.pravatar.cc/300?img=12",
-      "upvoteNumber": 10,
-      "downVoteNumber": 0,
+      "upvoteNumber": 72,
+      "downVoteNumber": 10,
       "misinformationNumber": 0,
       "password": "123"
     },
@@ -50,8 +50,8 @@
       "email": "4@g.com",
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=19",
-      "upvoteNumber": 0,
-      "downVoteNumber": 0,
+      "upvoteNumber": 62,
+      "downVoteNumber": 20,
       "misinformationNumber": 0,
       "password": "123"
     },
@@ -63,8 +63,8 @@
       "email": "5@g.com",
       "expertField": "",
       "avatar": "",
-      "upvoteNumber": 0,
-      "downVoteNumber": 0,
+      "upvoteNumber": 68,
+      "downVoteNumber": 32,
       "misinformationNumber": 0,
       "password": "123"
     },
@@ -77,7 +77,7 @@
       "email": "6@g.com",
       "expertField": "Health",
       "avatar": "https://i.pravatar.cc/300?img=1",
-      "upvoteNumber": 5,
+      "upvoteNumber": 4,
       "downVoteNumber": 0,
       "misinformationNumber": 0,
       "password": "123"
@@ -91,8 +91,8 @@
       "email": "7@g.com",
       "expertField": "Economics",
       "avatar": "https://i.pravatar.cc/300?img=9",
-      "upvoteNumber": 10,
-      "downVoteNumber": 0,
+      "upvoteNumber": 2,
+      "downVoteNumber": 64,
       "misinformationNumber": 0,
       "password": "123"
     },
@@ -105,8 +105,8 @@
       "email": "8@g.com",
       "expertField": "Food",
       "avatar": "https://i.pravatar.cc/300?img=6",
-      "upvoteNumber": 7,
-      "downVoteNumber": 0,
+      "upvoteNumber": 177,
+      "downVoteNumber": 23,
       "misinformationNumber": 0,
       "password": "123"
     },
@@ -117,109 +117,283 @@
       "location": "Kentucky",
       "verified": false,
       "expertField": "Chess",
-      "avatar": "https://cdn.chess24.com/LFONAgMVRvuMbE_V7EEqBA/original/beth.jpg",
-      "upvoteNumber": 0,
-      "downVoteNumber": 0,
+      "avatar": "https://i.pravatar.cc/300?img=2",
+      "upvoteNumber": 72,
+      "downVoteNumber": 8,
+      "misinformationNumber": 0,
+      "password": "123"
+    },
+    {
+      "id": 10,
+      "email": "10.com",
+      "userName": "Clarissa Jayalata",
+      "location": "London",
+      "verified": true,
+      "expertField": "Food",
+      "avatar": "https://i.pravatar.cc/300?img=4",
+      "upvoteNumber": 131,
+      "downVoteNumber": 26,
+      "misinformationNumber": 0,
+      "password": "123"
+    },
+    {
+      "id": 11,
+      "email": "11.com",
+      "userName": "Clarissa Jayalata",
+      "occupation": "Lawyer",
+      "location": "Dallas",
+      "verified": true,
+      "expertField": "Law",
+      "avatar": "https://i.pravatar.cc/300?img=5",
+      "upvoteNumber": 154,
+      "downVoteNumber": 32,
+      "misinformationNumber": 0,
+      "password": "123"
+    },
+    {
+      "id": 12,
+      "email": "12.com",
+      "userName": "Alli",
+      "location": "Florida",
+      "verified": false,
+      "expertField": "",
+      "avatar": "https://i.pravatar.cc/300?img=16",
+      "upvoteNumber": 76,
+      "downVoteNumber": 22,
+      "misinformationNumber": 0,
+      "password": "123"
+    },
+    {
+      "id": 13,
+      "email": "13.com",
+      "userName": "Apollo",
+      "location": "Texas",
+      "verified": false,
+      "expertField": "",
+      "avatar": "",
+      "upvoteNumber": 93,
+      "downVoteNumber": 56,
+      "misinformationNumber": 0,
+      "password": "123"
+    },
+    {
+      "id": 14,
+      "email": "14.com",
+      "userName": "Cally",
+      "location": "Texas",
+      "verified": false,
+      "expertField": "",
+      "avatar": "https://i.pravatar.cc/300?img=21",
+      "upvoteNumber": 24,
+      "downVoteNumber": 34,
+      "misinformationNumber": 0,
+      "password": "123"
+    },
+    {
+      "id": 15,
+      "email": "15.com",
+      "userName": "Candi",
+      "location": "Texas",
+      "verified": false,
+      "expertField": "",
+      "avatar": "https://i.pravatar.cc/300?img=22",
+      "upvoteNumber": 81,
+      "downVoteNumber": 24,
+      "misinformationNumber": 0,
+      "password": "123"
+    },
+    {
+      "id": 16,
+      "email": "16.com",
+      "userName": "Chevre",
+      "location": "Texas",
+      "verified": false,
+      "expertField": "",
+      "avatar": "",
+      "upvoteNumber": 6,
+      "downVoteNumber": 90,
       "misinformationNumber": 0,
       "password": "123"
     }
   ],
   "answers": [
     {
-      "id": 1,
-      "content": "So let's ask, what exactly defines worth it? \n Is it just money? \n If so, I can suggest many other jobs that earn more that a Computer Scientist (and I will lump in the common business application developer in with that category, who usually makes more salary wise than a researcher or educator). we make a great salary (for those of us who are good at what we do), but not as much as Bill. \n Is it low-stress? \n CS (specifically IT) often tops the list as most stressful jobs in the U.S. You work for managers who live by a date that you can't meet and for customers who don't know enough about applications to be able to concretely tell you all the detailed nuances of application development so you don't end up changing or redoing the app multiple times (scope change). \n It is a constant battle and only the Google's of the world understand enough about the programmers to try to make it fun and creative. The majority of companies tend to assume you are easily replaceable or outsourced. Add to that the stress of competing with an influx of people willing to work harder and for half your wages.",
+      "id": 11,
+      "content": "You asked about Computer SCIENCE, which is not really the same thing as programming or software development or systems engineering. I would define those as (at different levels) implementing something that you think may be useful and/or lucrative. \n Software development can be great fun. It might involve a lot of creativity or it might just be implementing some small, unexciting bit of someone else's idea. You might get rich, or it might just be an OK-paying job (with some danger that demand for your services will shrink due to advancing technology and outsourcing). Some companies have great working environments; some lock you in cubicles 9 to 5 and discourage interaction with other humans. Some (usually startups) expect you to work 80-hour weeks with the promise of a chance to get rich -- and occasionally that pays off. Some people stay on the technical side; some drift into management or related fields such as patent law or medical applications. The better you are at what you do, the more choices you will have in all such matters. \n But back to Computer SCIENCE. I can just relate my own point of view. I've spent 40+ years in some of the top CS departments and research labs in the world, working on various aspects of AI (which in my view is by far the most fun and challenging part of CS). And intellectually it has been a blast. I've been able to work with some of the smartest people on the planet, doing (or trying to do) really exciting things. There are fairly safe, solvable problems in AI and some that are considered by many to be impossible. I've always focused on the latter, which has made the ride more frustrating at times, but a lot more interesting. \n During my career, computers -- the ones that I have access to -- have increased in speed and memory capacity by 5 or 6 orders of magnitude. The iPod Touch in my pocket ($300 or so) has more processing power and memory than the whole world had when I started out. It has a gorgeous screen, access to the internet, and hundreds of capabilities that were not even dreamed of by science fiction writers back in the day. No technology in the history of the world that has made such radical progress in just one professional lifetime. It's been a hell of a ride, and for the CS field it's far from over. So how can this not be the most exciting career anyone could choose? \n OK, there have been times that funding struggles, politics, or badly managed projects have sucked all the fun out of life for a while. But it has certainly been worth it as a lifetime goal and avocation. If its just a job to you, that's a different deal. There may be better jobs around, but not many.",
       "questionId": 1,
-      "userId": 2,
-      "upVote": 9,
-      "downVote": 21,
-      "misinformation": 5,
-      "voteUsers": {
-        "2": 1
-      }
-    },
-    {
-      "id": 2,
-      "content": "Software engineering and programming jobs represent the typical career path for a computer science major. Nonetheless, careers in computer science evolve at a staggering rate. Job titles like Data Scientist and Big Data Engineer did not exist ten years ago. I can still see growth in data science jobs in the upcoming decade. To be prepared for such jobs, a data scientist needs to master four main skills: \n (1) Programming: a data scientist must be proficient in one or more high level programming languages like C/C++ and Java as well as major scripting languages such as Python and R. \n (2) Database / SQL: a data scientist must be able to manage, maintain, and retrieve data stored in large-scale data databases. Hence, learning SQL, as the most widely-used query language, is also becoming a must. \n (3) Statistics: a data scientist must be able to test various hypotheses on data. She cannot do that without solid understanding of statistical terminology such as Mean, Standard Deviation, P-value, and the Null Hypothesis… \n (4) Machine learning: a data scientist may need to build a machine learning on the input data to predict new unseen patterns. For instance, a data scientist at Netflix may leverage machine learning to predict the next movie you may want to watch. Such prediction model is one of many applications of machine learning theory.",
-      "questionId": 2,
       "userId": 1,
-      "upVote": 201,
-      "downVote": 5,
-      "misinformation": 5,
-      "voteUsers": {
-        "1": 1
-      }
-    },
-    {
-      "id": 3,
-      "content": "However, considering all these things I would like to categorise this decision making into 3 paths. \n Academic & Research : If you have very good academic results or excellent CGPA, then you would probably be interested in going to Teaching or Research in both Academic and Corporate sectors. If you are interested in Teaching, Research etc then you should just jump into your higher studies as soon as you graduate. If your CGPA is average/below average but you are still want to pursue this career path, then you can probably do some research work with a good professor for a while in your university and have a few good publications. This can be very helpful for the admission into renowned universities for higher studies. Don’t hesitate or waste your time if you want to go for this path. \n Jobs in Software Industry : If you have passion for software development things, you have to find out by yourself what you like most. Development tasks can be boring. So, unless you love what you do, you won’t feel good at your job. If you like Enterprise Software Development, find good companies around you who works in your preferred technologies. If you prefer mobile app development, then find companies that work in such things. Same goes for all other technologies and paths. If you don’t like core development things, then you may like project management, software testing, quality assurance and many other things. And there are many such roles in the companies where you can apply. However, the real problem can happen at another thing. As this is your first job, The big mistake that you might make can be “You go for the job that pays you most” . Believe me on this thing, Never do this. For your first job, Always choose that company which allows you do what you love most and the best possible opportunity to learn. There are many practices in Software Development/Engineering that you may think you know BUT actually you don’t know yet. You may not know how to write good, modular, reusable, testable codes, you may not know best practices of different layers in a good product development, You may not know how to work in a team as a good team member. These things are really important for your career. I have seen many of my friends and juniors do join a few big companies that pays better than others. But unfortunately, soon their job role gets limited to a certain thing within an already established product of that company. Eventually many of them gets frustrated and can not survive long. Those who survives, they eventually moves themselves into other management roles as time goes by. And many of them have to start fresh because of the wrong choice. So in summary, go for the job that you love to do. And think carefully before choosing the right company that helps you grow up to your highest potential. \n Entrepreneurship: This is probably the hardest path to take in my opinion. People may differ and I can’t argue because I didn’t took their path. So, I really don’t know their difficulty levels. However, I’ll only say why I chose this path back in 2013 just after my graduation. I started developing native Android and iOS mobile Apps as freelancer back in 2011 when I was a student. I really loved this work and that time was the rise-up time of Mobile Apps industry. I went to 3 locally reputed companies for job interview at my last semester and got decent job offers from 2 of them. But I wasn’t really happy with the role they chose me for. I wanted to be in Mobile platform & I wanted diversity in my works. That eventually brought Dhrubok Infotech Services Ltd. into existence. Well, I am not super successful entrepreneur in my career yet, But when there are discussions about the top tier talents in iOS and Android in Bangladesh, my name is discussed. If the discussion is about top App development companies, the name “Dhrubok” is discussed among some people. Well, maybe because Bangladesh is a small country :)",
-      "questionId": 2,
-      "userId": 3,
-      "upVote": 127,
-      "downVote": 12,
-      "misinformation": 22,
-      "voteUsers": {
-        "2": 3
-      }
-    },
-    {
-      "id": 4,
-      "content": "I like economics because everything is related to economics. Economics deals with production, consumption and distribution of wealth. Apat=rt form your income, even what kind of friends you have decides your consumption pattern. How healthy or educated you are decides your level of production. Your preference for the type of government decides the distribution of wealth.",
-      "questionId": 4,
-      "userId": 7,
-      "upVote": 3,
+      "upVote": 85,
       "downVote": 11,
-      "misinformation": 33,
-      "voteUsers": {
-        "2": 2
-      }
-    },
-    {
-      "id": 5,
-      "content": "The most important principle when it comes to controlling hair loss and simultaneously increasing hair growth is to understand that everything related to hair loss, growth, maintenance and overall health is directly tied to: \n 1. Genetics \n 2. Scalp Health \n 3. Lifestyle \n 4. Nutrition",
-      "questionId": 5,
-      "userId": 6,
-      "upVote": 5,
-      "downVote": 22,
-      "misinformation": 101,
+      "misinformation": 0,
       "voteUsers": {}
     },
     {
-      "id": 6,
+      "id": 12,
+      "content": "So let's ask, what exactly defines worth it? \n Is it just money? \n If so, I can suggest many other jobs that earn more that a Computer Scientist (and I will lump in the common business application developer in with that category, who usually makes more salary wise than a researcher or educator). we make a great salary (for those of us who are good at what we do), but not as much as Bill. \n Is it low-stress? \n CS (specifically IT) often tops the list as most stressful jobs in the U.S. You work for managers who live by a date that you can't meet and for customers who don't know enough about applications to be able to concretely tell you all the detailed nuances of application development so you don't end up changing or redoing the app multiple times (scope change). \n It is a constant battle and only the Google's of the world understand enough about the programmers to try to make it fun and creative. The majority of companies tend to assume you are easily replaceable or outsourced. Add to that the stress of competing with an influx of people willing to work harder and for half your wages.",
+      "questionId": 1,
+      "userId": 2,
+      "upVote": 33,
+      "downVote": 15,
+      "misinformation": 1,
+      "voteUsers": {}
+    },
+    {
+      "id": 17,
+      "content": "Absolutely no! \n I think working in the CS field is the stupid thing in the world. Technology occupies a large portion of people's lives and it deprives freedom of people. I hate technology and I hate CS.",
+      "questionId": 1,
+      "userId": 7,
+      "upVote": 2,
+      "downVote": 64,
+      "misinformation": 59,
+      "voteUsers": {}
+    },
+    {
+      "id": 24,
+      "content": "Software engineering and programming jobs represent the typical career path for a computer science major. Nonetheless, careers in computer science evolve at a staggering rate. Job titles like Data Scientist and Big Data Engineer did not exist ten years ago. I can still see growth in data science jobs in the upcoming decade. To be prepared for such jobs, a data scientist needs to master four main skills: \n (1) Programming: a data scientist must be proficient in one or more high level programming languages like C/C++ and Java as well as major scripting languages such as Python and R. \n (2) Database / SQL: a data scientist must be able to manage, maintain, and retrieve data stored in large-scale data databases. Hence, learning SQL, as the most widely-used query language, is also becoming a must. \n (3) Statistics: a data scientist must be able to test various hypotheses on data. She cannot do that without solid understanding of statistical terminology such as Mean, Standard Deviation, P-value, and the Null Hypothesis… \n (4) Machine learning: a data scientist may need to build a machine learning on the input data to predict new unseen patterns. For instance, a data scientist at Netflix may leverage machine learning to predict the next movie you may want to watch. Such prediction model is one of many applications of machine learning theory.",
+      "questionId": 2,
+      "userId": 4,
+      "upVote": 62,
+      "downVote": 20,
+      "misinformation": 5,
+      "voteUsers": {}
+    },
+    {
+      "id": 23,
+      "content": "However, considering all these things I would like to categorise this decision making into 3 paths. \n Academic & Research : If you have very good academic results or excellent CGPA, then you would probably be interested in going to Teaching or Research in both Academic and Corporate sectors. If you are interested in Teaching, Research etc then you should just jump into your higher studies as soon as you graduate. If your CGPA is average/below average but you are still want to pursue this career path, then you can probably do some research work with a good professor for a while in your university and have a few good publications. This can be very helpful for the admission into renowned universities for higher studies. Don’t hesitate or waste your time if you want to go for this path. \n Jobs in Software Industry : If you have passion for software development things, you have to find out by yourself what you like most. Development tasks can be boring. So, unless you love what you do, you won’t feel good at your job. If you like Enterprise Software Development, find good companies around you who works in your preferred technologies. If you prefer mobile app development, then find companies that work in such things. Same goes for all other technologies and paths. If you don’t like core development things, then you may like project management, software testing, quality assurance and many other things. And there are many such roles in the companies where you can apply. However, the real problem can happen at another thing. As this is your first job, The big mistake that you might make can be “You go for the job that pays you most” . Believe me on this thing, Never do this. For your first job, Always choose that company which allows you do what you love most and the best possible opportunity to learn. There are many practices in Software Development/Engineering that you may think you know BUT actually you don’t know yet. You may not know how to write good, modular, reusable, testable codes, you may not know best practices of different layers in a good product development, You may not know how to work in a team as a good team member. These things are really important for your career. I have seen many of my friends and juniors do join a few big companies that pays better than others. But unfortunately, soon their job role gets limited to a certain thing within an already established product of that company. Eventually many of them gets frustrated and can not survive long. Those who survives, they eventually moves themselves into other management roles as time goes by. And many of them have to start fresh because of the wrong choice. So in summary, go for the job that you love to do. And think carefully before choosing the right company that helps you grow up to your highest potential. \n Entrepreneurship: This is probably the hardest path to take in my opinion. People may differ and I can’t argue because I didn’t took their path. So, I really don’t know their difficulty levels. However, I’ll only say why I chose this path back in 2013 just after my graduation. I started developing native Android and iOS mobile Apps as freelancer back in 2011 when I was a student. I really loved this work and that time was the rise-up time of Mobile Apps industry. I went to 3 locally reputed companies for job interview at my last semester and got decent job offers from 2 of them. But I wasn’t really happy with the role they chose me for. I wanted to be in Mobile platform & I wanted diversity in my works. That eventually brought Dhrubok Infotech Services Ltd. into existence. Well, I am not super successful entrepreneur in my career yet, But when there are discussions about the top tier talents in iOS and Android in Bangladesh, my name is discussed. If the discussion is about top App development companies, the name “Dhrubok” is discussed among some people. Well, maybe because Bangladesh is a small country :)",
+      "questionId": 2,
+      "userId": 3,
+      "upVote": 48,
+      "downVote": 8,
+      "misinformation": 3,
+      "voteUsers": {}
+    },
+    {
+      "id": 311,
+      "content": "Unfortunately yes, but not for the reason of malice that many have stated here. \n It is a sad fact that US intellectual property law has a venemous little clause that states that intellectual property must be defended or it lapses. Hence Disney has sued orphanages that decorate their walls with Mickey Mouse, and McDonalds has sued people literally named McDonald for calling their restuarant McDonald’s. \n They had to, or risked losing their rights to their intellectual property. \n I have a friend who’s a lawyer who speculated once that the clause must have been put in by a lawyer because they are literally the only ones it benefits. \n I would, of course, recommend taking proper legal advice (I’m not a lawyer, nor does anything written here constitute legal advice). \n It is a near certainty that they will sue you, because they have to. However you may be able to hire a lawyer to send a polite letter and asking if some accomodation can be reached, such as perhaps McDonalds paying for the change in signage. Don’t send it to their lawyers - they’ll just see lost income, send it to their accounting department, and point out likely legal costs to McDonalds for fighting you in court, and that the solution you’re proposing is likely to cost far less, generate less negative PR, and be an all-round cheaper and happier solution for everyone involved.",
+      "questionId": 3,
+      "userId": 11,
+      "upVote": 154,
+      "downVote": 31,
+      "misinformation": 6,
+      "voteUsers": {}
+    },
+    {
+      "id": 310,
+      "content": "Probably not. At least, not if your logo, your advertising, and your business location is sufficiently distinct from McDonald’s advertising/logo/location such that there is no discernible likelihood that anyone in the marketplace would ever confuse your business with theirs. McDonald’s does not have, as has already been pointed out, a Trade-mark or any other kind of legal restriction on the letter combination “Mc” when used with other words.",
+      "questionId": 3,
+      "userId": 10,
+      "upVote": 2,
+      "downVote": 12,
+      "misinformation": 58,
+      "voteUsers": {}
+    },
+    {
+      "id": 414,
+      "content": "I like economics because everything is related to economics. Economics deals with production, consumption and distribution of wealth. Apart form your income, even what kind of friends you have decides your consumption pattern. How healthy or educated you are decides your level of production. Your preference for the type of government decides the distribution of wealth.",
+      "questionId": 4,
+      "userId": 14,
+      "upVote": 24,
+      "downVote": 34,
+      "misinformation": 10,
+      "voteUsers": {}
+    },
+    {
+      "id": 45,
+      "content": "You should not. \n Sit there and do not study. Do nothing. \n Or, realize it is your life. Today, Tomorrow, Next Week, Next Month, Next Year. It is your life.",
+      "questionId": 4,
+      "userId": 5,
+      "upVote": 58,
+      "downVote": 32,
+      "misinformation": 86,
+      "voteUsers": {}
+    },
+    {
+      "id": 515,
+      "content": "The most important principle when it comes to controlling hair loss and simultaneously increasing hair growth is to understand that everything related to hair loss, growth, maintenance and overall health is directly tied to: \n 1. Genetics \n 2. Scalp Health \n 3. Lifestyle \n 4. Nutrition",
+      "questionId": 5,
+      "userId": 15,
+      "upVote": 81,
+      "downVote": 24,
+      "misinformation": 1,
+      "voteUsers": {}
+    },
+    {
+      "id": 56,
       "content": "Hair-loss can be controlled by taking care of hair properly. I had extreme dandruff causing hair fall.\nFirst step would be to analyse the reason of your hair fall.\n(PS: if reason for your hair fall is different, solution would be different. I am answering my experience which was due to high dandruff)\n\nThe doctor suggested me of washing my hair daily with a medicated shampoo. She suggested \"8X\" shampoo, but if it is not available, any alternative can be used.\nI have been using the shampoo for 4 years now.\n\nBefore using this shampoo, my hair used to look dry and I applied more oil on that. The doctor told me that the condition is due to a fungus which survives on the oil and suggested me to stop applying oil immediately. It didn't looked correct in the first go, but now it has been 4 years since I applied any oil, and my hair look much healthier. In fact, by the end of the day natural oil secreted by my scalp makes my hair look oiled.\n\nDiet:\n\nHaving antioxidant rich food helps in healthy hair growth, it includes fruits, green vegetables , green tea and Flax seeds.\n\nHaving proteins rich foods like soya bean, milk, white meat (fish/chicken) provide ingredients for hair growth.\n\nExercise:\nYes, they have an exercise for hair too.\nIncrease in hair growth can be simulated by massaging and activating scalp cells. Doing neck exercises. However I do that only occasionally as I am lazy.",
       "questionId": 5,
-      "userId": 1,
-      "upVote": 31,
+      "userId": 6,
+      "upVote": 4,
       "downVote": 0,
       "misinformation": 0,
       "voteUsers": {}
     },
     {
-      "id": 7,
-      "content": "ADVICE FOR MY CHILDREN ... A True Story: \n Many years ago, after a day of great wailing and gnashing of teeth in the Rogers household, I decided to sit my two oldest boys down (then aged 8 and 10) and give them information most parents don’t take the time to explain to their children: \n 1. Please realize, you haven't had an original thought in that tiny little brain of yours. All the things you're thinking have already been thunk of before. \n 2. All the things you're contemplating doing didn't work any better for your mother and me when we were your age. \n 3. Yes. Believe it or not we WERE once your age, so we can anticipate your next move even before you do. \n 4. You may think you're being really creative, but I feel compelled to warn you that I always know when you're lying to me. Always. \n 5. You are correct when you say It (whatever it is) isn't fair. Life frequently isn't fair. Fair is a place where you eat fried food and zoom around on poorly-maintained, over-priced rides until said fried food is forcefully expelled from your stomach. What you'll receive from your mother and me is equity and justice in our ultimate answer to your dilemma.",
-      "questionId": 6,
-      "userId": 3,
-      "upVote": 31,
-      "downVote": 2,
-      "misinformation": 0,
+      "id": 512,
+      "content": "Just stay up late :)",
+      "questionId": 5,
+      "userId": 12,
+      "upVote": 76,
+      "downVote": 22,
+      "misinformation": 50,
       "voteUsers": {}
     },
     {
-      "id": 8,
+      "id": 69,
+      "content": "ADVICE FOR MY CHILDREN ... A True Story: \n Many years ago, after a day of great wailing and gnashing of teeth in the Rogers household, I decided to sit my two oldest boys down (then aged 8 and 10) and give them information most parents don’t take the time to explain to their children: \n 1. Please realize, you haven't had an original thought in that tiny little brain of yours. All the things you're thinking have already been thunk of before. \n 2. All the things you're contemplating doing didn't work any better for your mother and me when we were your age. \n 3. Yes. Believe it or not we WERE once your age, so we can anticipate your next move even before you do. \n 4. You may think you're being really creative, but I feel compelled to warn you that I always know when you're lying to me. Always. \n 5. You are correct when you say It (whatever it is) isn't fair. Life frequently isn't fair. Fair is a place where you eat fried food and zoom around on poorly-maintained, over-priced rides until said fried food is forcefully expelled from your stomach. What you'll receive from your mother and me is equity and justice in our ultimate answer to your dilemma. \n 6. In case you haven't realized it, I'll make this point clear: I will very rarely ask you a question to which I do not already know the answer. \n 7. There is a concept known in the adult world called The Big Picture. As a child you possess an incredibly sequestered, tightly confined knowledge base, and are frequently not privy to outlying circumstances that influence the selection of choices we have. Thus, when we say no, it's usually for reasons you cannot begin to fathom, and not because we enjoy being a big meanie!. \n 8. But consider this: We say yes a lot more than we say no. This often means your mother and I have to do without something WE want to do or have. \n 9. When we picked you up at the hospital they gave us a thin pink and blue (a.k.a.: unisex) blanket and a huge bill. They did not issue us a New Baby Owner's Manual. So yes, we're making it up as we go along, and we hope to God we get it right far more than we get it wrong. \n 10. Most important for you to know: This family is not run as a democracy; it is a benevolent dictatorship. Your mother and I will always solicit your input and counsel in our consideration of your requests, but you do not get a vote. At the end of the day the burden of decision-making will always rest with us. \n Thus endeth the lesson.",
+      "questionId": 6,
+      "userId": 9,
+      "upVote": 72,
+      "downVote": 8,
+      "misinformation": 1,
+      "voteUsers": {}
+    },
+    {
+      "id": 616,
+      "content": "Female should all get married and give birth.",
+      "questionId": 6,
+      "userId": 16,
+      "upVote": 6,
+      "downVote": 90,
+      "misinformation": 280,
+      "voteUsers": {}
+    },
+    {
+      "id": 78,
       "content": "I don't know why anyone would soak them overnight. I put mine in an ice water bath from 2-4 hours with a couple of tablespoons of distilled white vinegar. I drain them, dry them and double fry them. Tastes better than any restaurant fries! Stays crispy on the outside and tender, flaky on the inside. \n I learned this technique a few years ago (the double fry method) after searching the internet for restaurant quality fries. Ree Drummond - The Pioneer Woman has a fool-proof technique as well. After soaking them to remove most of the starch, draining then drying them VERY WELL, Set your fryer at 300°F (or use a thermometer in a pot of oil) and fry them for 3–4 minutes. This is called blanching and you do this in batches so you may have a few small batches depending on how many people you are making them for. \n After you are done blanching, turn the thermostat (or fire) up to 400°F and fry the first batch until golden brown and make sure the oil is at 400° before you fry each batch. \n Season with salt, pepper and or malt vinegar and you just made yourself some better than restaurant quality fries! \n Don't cover your fries after the final fry, this will make them soggy and after you start the final fry, it moves pretty quickly and the other fries will stay hot with each addition. And the vinegar helps them to maintain their color and texture.",
       "questionId": 7,
       "userId": 8,
-      "upVote": 3,
+      "upVote": 177,
+      "downVote": 23,
+      "misinformation": 1,
+      "voteUsers": {}
+    },
+    {
+      "id": 710,
+      "content": "Side-stepping all the different techniques for cold-water soaking — there are plenty suggested below — I’ll try to answer the “why” part of your question. \n Potatoes have two different types of starches: amylose and amylopectin. Amylose, when cooked, is drier and firmer. On the other hand, amylopectin (much like pectin in jam and jellies) is soft and sticky when cooked. \n For french fries, you want to decrease the amount of amylopectin, which will make them gooey rather than crisp. The more amylose you have relatively, however, the drier and fluffier and crispier your fries will be after cooking. \n Fortunately, amylopectin is water-soluble, so soaking in cold water will help dissolve out this softer starch. \n As for time, I’ve never actually tested soaking overnight side-by-side with other time periods, so I can’t speak to that. (We did this in restaurants because the timing fit into our prep schedule.) I do know that at least a couple of hours is noticeably better than 15 minutes. And you will want to use cold water, as that dissolves out the starch best. \n On a related note, different ratios of amylopectin and amylose contributes to much of the change in potato textures across varieties — e.g. waxy red new potatoes vs. big starchy Yukon Golds. Selecting the appropriate potato variety will be very important also in achieving good texture in your french fries.",
+      "questionId": 7,
+      "userId": 10,
+      "upVote": 121,
+      "downVote": 14,
+      "misinformation": 2,
+      "voteUsers": {}
+    },
+    {
+      "id": 83,
+      "content": "The architecture of a particular microprocessor, used in embedded applications, including, notably, the the control of the motors in electric vehicles, has a very nasty bug indeed. I am not at all accustomed to finding bugs in micros; even if they exist they are often largely insignificant, many manifest themselves as security problems of dubious exploitability or simply things which can be eliminated by modifications to compilers. My assumption is that I have made a mistake - my code is tested for a couple of hours, the micro for many, many more in conditions designed to cause stress to some of humanity’s more ingenious innovations. \n This one is different. \n Many embedded micros depend on the ability to interrupt, at higher or indeed any priority, an interrupt service routine. Sorry, everyone, but there are a whole lot of systems like that out there. This is facilitated by re-enabling of interrupts at the start of the service routine, on return, all registers are unstacked, and so no further action is needed. Usually a fragment of assembler handles this, possibly wrapped. \n This particular machine had a mechanism for controlling a seldom-used (probably a deal-maker for one important customer, at a late time during development prohibiting exhaustve testing due to commercial pressure) feature allowing the acceleration of certain calculations. If an interrupteing ISR returns at a very specific point of execution, between the operation needed to restore the state of this maverick little machine, and those needed to restore the previous state of the processor, probably because the former is not dealt with correctly, if at all, on the stack, all hell breaks loose. And I mean that. The stack is organised below, and in the same unprotected address space as the controller’s directly mapped I/O. The effect is that of a recursive procedure call, with no terminating condition. \n The circumstances under which the bug is observed are difficuult to reproduce, but occur about, typically, every two days. \n I have kept this reasonably technical, for (by my standards) brevity. \n I hope your car’s fuses work. This is not, I imagine, always the case. Such devices depend on thermal destruction, and are of course very expensive to install where needed. \n I don’t know if any compiler supports this, it is not by any means devoid of complication, but statements in compiled code, ought, in my opinion, be optionally defined as atomic, indivisible, including “return();” Automatic mutexes should not be beyond the wit of designers. Intel (eventually) managed speculative transaction processing.",
+      "questionId": 8,
+      "userId": 3,
+      "upVote": 24,
       "downVote": 2,
       "misinformation": 0,
       "voteUsers": {}
     },
     {
-      "id": 9,
-      "content": "This is a super stupid question.",
+      "id": 813,
+      "content": "The invention of computer is the origin which leads to the end of human culture.",
       "questionId": 8,
-      "userId": 2,
-      "upVote": 2,
-      "downVote": 28,
+      "userId": 13,
+      "upVote": 5,
+      "downVote": 93,
       "misinformation": 56,
       "voteUsers": {}
     }
@@ -229,10 +403,11 @@
       "id": 1,
       "title": "Is a career in computer science really worth it?",
       "description": "I worked in cs related fields but I am worried if my effort worth it.",
-      "userId": 1,
+      "userId": 3,
       "category": [
         "Computer Science",
-        "Career"
+        "Career",
+        "Technology"
       ]
     },
     {
@@ -242,7 +417,19 @@
       "userId": 2,
       "category": [
         "Computer Science",
-        "Career"
+        "Career",
+        "Technology"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Will my donut shop be sued?",
+      "description": "I opened a donut shop named McDonuts, and McDonald's is asking us to change the name. Will we be sued if we do not?",
+      "userId": 4,
+      "category": [
+        "Law",
+        "Life",
+        "Food"
       ]
     },
     {
