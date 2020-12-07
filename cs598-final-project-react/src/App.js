@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Header from './components/Header';
 
 const App = () => {
-    const [isLoggedIn, setLoggedIn] = useState(false);
+    const [isLoggedIn, setLoggedIn] = useState(localStorage.getItem("userId") !== null);
     const handleLogin = (userId) => {
         setLoggedIn(true);
         localStorage.setItem('userId', userId);

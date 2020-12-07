@@ -9,6 +9,10 @@ const MainPageQAItem = ({questionTitle, questionId, userId, answerContent}) => {
     const pathname = `/question/${questionId}`;
     console.log(typeof(userId), questionId, pathname);
     const onClickQuestionTitle = ()=>{ history.push(pathname)};
+    let splitAnswerContent = answerContent.split(" ");
+    if(splitAnswerContent.length > 50){
+        answerContent = splitAnswerContent.slice(0, 50).join(" ") + "...";
+    }
 
     return (
     <Container>
@@ -17,7 +21,9 @@ const MainPageQAItem = ({questionTitle, questionId, userId, answerContent}) => {
     </Item.Header>
     {answerContent&&userId && <BioOverview userId={userId}/>}
     <p>
-        {answerContent}
+        {answerContent.split("\n").map((i,key) => {
+            return <p key={key}>{i}</p>;
+        })}
     </p>
     </Container>);
 };
