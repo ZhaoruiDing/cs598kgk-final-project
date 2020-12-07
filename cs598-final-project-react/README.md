@@ -7,7 +7,7 @@ first, go to cs598-final-project-react folder:
 
 in folder
 
-`cs598kgk-final-project\cs598-final-project-react`
+`cs598kgk-final-project/cs598-final-project-react`
 
 open one terminal, first install required libraries:
 
@@ -17,7 +17,7 @@ then run following command:
 
 `npm run json:server`
 
-open another terminal under same folder `cs598kgk-final-project\cs598-final-project-react`, run following command:
+open another terminal under same folder `cs598kgk-final-project/cs598-final-project-react`, run following command:
 
 `npm start`
 
