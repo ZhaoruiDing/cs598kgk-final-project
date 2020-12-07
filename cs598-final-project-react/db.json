@@ -81,6 +81,18 @@
       "avatar": "https://i.pravatar.cc/300?img=9",
       "upvoteNumber": 10,
       "password": "123"
+    },
+    {
+      "id": 8,
+      "userName": "Jackson Clapton",
+      "location": "New York",
+      "occupation": "Chef",
+      "verified": true,
+      "email": "8@g.com",
+      "expertField": "Food",
+      "avatar": "https://i.pravatar.cc/300?img=6",
+      "upvoteNumber": 7,
+      "password": "123"
     }
   ],
   "answers": [
@@ -149,6 +161,36 @@
       "downVote": 0,
       "misinformation": 0,
       "voteUsers": {}
+    },
+    {
+      "id": 7,
+      "content":"ADVICE FOR MY CHILDREN ... A True Story: \n Many years ago, after a day of great wailing and gnashing of teeth in the Rogers household, I decided to sit my two oldest boys down (then aged 8 and 10) and give them information most parents don’t take the time to explain to their children: \n 1. Please realize, you haven't had an original thought in that tiny little brain of yours. All the things you're thinking have already been thunk of before. \n 2. All the things you're contemplating doing didn't work any better for your mother and me when we were your age. \n 3. Yes. Believe it or not we WERE once your age, so we can anticipate your next move even before you do. \n 4. You may think you're being really creative, but I feel compelled to warn you that I always know when you're lying to me. Always. \n 5. You are correct when you say It (whatever it is) isn't fair. Life frequently isn't fair. Fair is a place where you eat fried food and zoom around on poorly-maintained, over-priced rides until said fried food is forcefully expelled from your stomach. What you'll receive from your mother and me is equity and justice in our ultimate answer to your dilemma.",
+      "questionId": 6,
+      "userId": 3,
+      "upVote": 31,
+      "downVote": 2,
+      "misinformation": 0,
+      "voteUsers": {}
+    },
+    {
+      "id": 8,
+      "content":"I don't know why anyone would soak them overnight. I put mine in an ice water bath from 2-4 hours with a couple of tablespoons of distilled white vinegar. I drain them, dry them and double fry them. Tastes better than any restaurant fries! Stays crispy on the outside and tender, flaky on the inside. \n I learned this technique a few years ago (the double fry method) after searching the internet for restaurant quality fries. Ree Drummond - The Pioneer Woman has a fool-proof technique as well. After soaking them to remove most of the starch, draining then drying them VERY WELL, Set your fryer at 300°F (or use a thermometer in a pot of oil) and fry them for 3–4 minutes. This is called blanching and you do this in batches so you may have a few small batches depending on how many people you are making them for. \n After you are done blanching, turn the thermostat (or fire) up to 400°F and fry the first batch until golden brown and make sure the oil is at 400° before you fry each batch. \n Season with salt, pepper and or malt vinegar and you just made yourself some better than restaurant quality fries! \n Don't cover your fries after the final fry, this will make them soggy and after you start the final fry, it moves pretty quickly and the other fries will stay hot with each addition. And the vinegar helps them to maintain their color and texture.",
+      "questionId": 7,
+      "userId": 8,
+      "upVote": 3,
+      "downVote": 2,
+      "misinformation": 0,
+      "voteUsers": {}
+    },
+    {
+      "id": 9,
+      "content":"This is a super stupid question.",
+      "questionId": 8,
+      "userId": 2,
+      "upVote": 2,
+      "downVote": 28,
+      "misinformation": 56,
+      "voteUsers": {}
     }
   ],
   "questions": [
@@ -190,6 +232,35 @@
       "category": [
         "Health",
         "Hair"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "What are ten truths everyone should accept in life?",
+      "description": "As title",
+      "userId": 7,
+      "category": [
+        "Philosophy"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Why would you soak sliced potatoes overnight before frying when making French fries?",
+      "description": "As title",
+      "userId": 3,
+      "category": [
+        "Cooking",
+        "Food"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "What is one random thing you know about a computer that most people don’t?",
+      "description": "As title",
+      "userId": 2,
+      "category": [
+        "Computer Science",
+        "Technology"
       ]
     }
   ]
