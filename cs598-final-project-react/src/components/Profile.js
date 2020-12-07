@@ -64,9 +64,9 @@ class User extends Component {
                 );
             }
             let expert_message = (
-                <div className="ui ignored info message">
+                <div className="ui ignored yellow message">
                     <i className="icon check"></i>
-                    Trustworthy answer by verified {user.expertField} Expert
+                    Trustworthy and verified Expert
                 </div>)
             return (
                 <Container>
