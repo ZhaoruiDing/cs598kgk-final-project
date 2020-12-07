@@ -48,6 +48,7 @@ const LoginForm = ({ handleLogin }) => {
         email: userEmail,
         userName: username,
         location: location,
+        occupation: occupation,
         verified: false,
         expertField: expertField,
         avatar: "",
