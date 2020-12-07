@@ -1,4 +1,5 @@
 # cs598kgk-final-project
+## How to run this project
 To run this project:
 
 first, go to cs598-final-project-react folder:
