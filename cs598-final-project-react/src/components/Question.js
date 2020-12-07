@@ -57,7 +57,7 @@ class Question extends Component {
                 question: responses[0].data,
                 answers: responses[1].data.sort(function (a, b) {
                     // here we can set some useful sorting algorithms
-                    return b.upVote - a.upVote;
+                    return b.upVote - a.upVote - (b.downVote - a.downVote) * 5 - (b.misinformation - a.misinformation) * 15;
                 }),
                 users_dict: this.create_user_dict(responses[2].data),
                 clicked: this.create_clicked(responses[1].data)
