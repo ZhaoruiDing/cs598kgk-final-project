@@ -4,10 +4,10 @@ import axios from 'axios'
 import { useHistory } from 'react-router-dom'
 
 const LoginForm = ({ handleLogin }) => {
-  const [userId, setUserId] = useState('')
+  const [userEmail, setUserEmail] = useState('')
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
-  const [userIdTouched, setUserIdTouched] = useState(false)
+  const [userEmailTouched, setUserEmailTouched] = useState(false)
   const [usernameTouched, setUsernameTouched] = useState(false)
   const [passwordTouched, setPasswordTouched] = useState(false)
   const [occupation, setOccupation] = useState('')
@@ -17,9 +17,9 @@ const LoginForm = ({ handleLogin }) => {
   const [registerFailed, setRegisterFailed] = useState(false)
   let history = useHistory()
 
-  const handleUserIdChange = (e, { value }) => {
-    setUserIdTouched(true)
-    setUserId(value)
+  const handleUserEmailChange = (e, { value }) => {
+    setUserEmailTouched(true)
+    setUserEmail(value)
   }
   const handleUserNameChange = (e, { value }) => {
     setUsernameTouched(true)
@@ -45,7 +45,7 @@ const LoginForm = ({ handleLogin }) => {
   const onSubmit = () => {
     axios
       .post(`http://localhost:4000/users`, {
-        id: userId,
+        email: userEmail,
         userName: username,
         location: location,
         verified: false,
@@ -57,10 +57,10 @@ const LoginForm = ({ handleLogin }) => {
       .then(_ => {
         setRegisterSuccess(true)
         setRegisterFailed(false)
-        setUserId('')
+        setUserEmail('')
         setUsername('')
         setPassword('')
-        setUserIdTouched(false)
+        setUserEmailTouched(false)
         setUsernameTouched(false)
         setPasswordTouched(false)
         setOccupation('')
@@ -71,7 +71,7 @@ const LoginForm = ({ handleLogin }) => {
         console.log(e, 'hahahahahaha')
         setRegisterFailed(true)
       })
-    console.log(userId, password)
+    console.log(username, password)
   }
   return (
     <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
@@ -88,13 +88,13 @@ const LoginForm = ({ handleLogin }) => {
           <Segment stacked>
             <Form.Input
               fluid
-              icon='id badge'
+              icon='mail'
               iconPosition='left'
-              placeholder='user ID(required)'
-              value={userId}
-              onChange={handleUserIdChange}
+              placeholder='Email(required)'
+              value={userEmail}
+              onChange={handleUserEmailChange}
               error={
-                userIdTouched && !userId
+                userEmailTouched && !userEmail
                   ? {
                     content: 'user ID is required',
                     pointing: 'above'
@@ -163,7 +163,7 @@ const LoginForm = ({ handleLogin }) => {
               fluid
               size='large'
               content='Sign Up'
-              disabled={!userId || !username || !password}
+              disabled={!userEmail || !username || !password}
             />
 
             {registerSuccess && (
