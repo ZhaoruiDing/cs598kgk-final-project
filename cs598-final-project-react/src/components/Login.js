@@ -4,38 +4,42 @@ import axios from 'axios'
 import {useHistory} from 'react-router-dom'
 
 const LoginForm = ({handleLogin}) => {
-  const [userId, setuserId] = useState(null);
-  const [password, setPassword] = useState(null);
+  // const [userId, setUserId] = useState("");
+  const [password, setPassword] = useState("");
+  const [userEmail,setUserEmail] = useState("");
   let history = useHistory();
 
-  const handleuserIdChange = (e, {value}) => {
+  const handleUserEmailChange = (e, {value}) => {
     console.log(value);
-    setuserId(value)
+    setUserEmail(value)
   }
   const handlePasswordChange =(e, {value}) => {
     console.log(value);
     setPassword(value);
   }
 
-  const checkPasswordMatch = async (userId, password) => {
+  const checkPasswordMatch = async (userEmail, password) => {
     try {
-      const {data} = await axios.get(`http://localhost:4000/users/${userId}`);
+      const {data} = await axios.get(`http://localhost:4000/users?email=${userEmail}`);
       console.log("check data", data);
-      if (password !== data.password) {
-        console.log("password", typeof(password), typeof(data.password));
-        return false;
+      const user = data.length > 0? data[0] : null;
+      if (password !== user.password) {
+        console.log("password", typeof(password), typeof(user.password));
+        return "";
+      }
+      else {
+        console.log("I am here to set userId");
+        return user.id;
       }
     } catch (e) {
       alert("Error! Register First Or Check Your Network");
-      return false;
+      return "";
     }
-    return true;
   }
   const onSubmit = () => {
-    console.log(userId, password);
-    checkPasswordMatch(userId, password).then((passwordCorrect)=>{
-      console.log("result", passwordCorrect)
-      if (passwordCorrect) {
+    checkPasswordMatch(userEmail, password).then((userId)=>{
+      if (userId) {
+        console.log("password is correct and userId is", userId);
         handleLogin(userId);
         history.push('/');
       }
@@ -52,7 +56,7 @@ const LoginForm = ({handleLogin}) => {
       </Header>
       <Form size='large' onSubmit={onSubmit}>
         <Segment stacked>
-          <Form.Input fluid icon='user' iconPosition='left' placeholder='Your user ID' onChange={handleuserIdChange}/>
+          <Form.Input fluid icon='mail' iconPosition='left' placeholder='Your Email' onChange={handleUserEmailChange}/>
           <Form.Input
             fluid
             icon='lock'
