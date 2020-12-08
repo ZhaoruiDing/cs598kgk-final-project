@@ -1,11 +1,7 @@
 # How to run this project
 To run this project:
 
-first, go to cs598-final-project-react folder:
-
-`cd cs598-final-project-react`
-
-in folder
+in current folder
 
 `cs598kgk-final-project/cs598-final-project-react`
 
