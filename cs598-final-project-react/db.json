@@ -9,7 +9,7 @@
       "email": "1@g.com",
       "expertField": "Computer Science",
       "avatar": "https://i.pravatar.cc/300?img=33",
-      "upvoteNumber": 85,
+      "upvoteNumber": 2387,
       "downVoteNumber": 11,
       "misinformationNumber": 0,
       "password": "123"
@@ -37,7 +37,7 @@
       "email": "3@g.com",
       "expertField": "Technology",
       "avatar": "https://i.pravatar.cc/300?img=12",
-      "upvoteNumber": 72,
+      "upvoteNumber": 3258,
       "downVoteNumber": 10,
       "misinformationNumber": 0,
       "password": "123"
@@ -77,7 +77,7 @@
       "email": "6@g.com",
       "expertField": "Health",
       "avatar": "https://i.pravatar.cc/300?img=1",
-      "upvoteNumber": 4,
+      "upvoteNumber": 10943,
       "downVoteNumber": 0,
       "misinformationNumber": 0,
       "password": "123"
@@ -91,7 +91,7 @@
       "email": "7@g.com",
       "expertField": "Economics",
       "avatar": "https://i.pravatar.cc/300?img=9",
-      "upvoteNumber": 2,
+      "upvoteNumber": 5623,
       "downVoteNumber": 64,
       "misinformationNumber": 0,
       "password": "123"
@@ -105,7 +105,7 @@
       "email": "8@g.com",
       "expertField": "Food",
       "avatar": "https://i.pravatar.cc/300?img=6",
-      "upvoteNumber": 177,
+      "upvoteNumber": 8482,
       "downVoteNumber": 23,
       "misinformationNumber": 0,
       "password": "123"
@@ -131,7 +131,7 @@
       "verified": true,
       "expertField": "Food",
       "avatar": "https://i.pravatar.cc/300?img=4",
-      "upvoteNumber": 131,
+      "upvoteNumber": 3134,
       "downVoteNumber": 26,
       "misinformationNumber": 0,
       "password": "123"
@@ -145,7 +145,7 @@
       "verified": true,
       "expertField": "Law",
       "avatar": "https://i.pravatar.cc/300?img=5",
-      "upvoteNumber": 154,
+      "upvoteNumber": 6743,
       "downVoteNumber": 32,
       "misinformationNumber": 0,
       "password": "123"
