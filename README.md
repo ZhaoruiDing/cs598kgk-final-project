@@ -1,6 +1,6 @@
 # cs598kgk-final-project
 ## How to run this project
-To run this project:
+To run this project, open one terminal:
 
 first, under `cs598kgk-final-project`, run
 
@@ -14,7 +14,7 @@ in folder
 
 `cs598kgk-final-project/cs598-final-project-react`
 
-open one terminal, first install required libraries:
+first install required libraries:
 
 `npm install`
 
