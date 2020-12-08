@@ -2,7 +2,11 @@
 ## How to run this project
 To run this project:
 
-first, go to cs598-final-project-react folder:
+first, under `cs598kgk-final-project`, run
+
+`npm install`
+
+then go to cs598-final-project-react folder:
 
 `cd cs598-final-project-react`
 
