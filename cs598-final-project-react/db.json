@@ -224,8 +224,24 @@
       "expertField": "Computer Science",
       "avatar": "",
       "upvoteNumber": 0,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
       "password": "123456",
       "id": 17
+    },
+    {
+      "email": "123@gg.com",
+      "userName": "test",
+      "location": "",
+      "occupation": "",
+      "verified": false,
+      "expertField": "",
+      "avatar": "",
+      "upvoteNumber": 0,
+      "downVoteNumber": 0,
+      "misinformationNumber": 0,
+      "password": "123",
+      "id": 18
     }
   ],
   "answers": [

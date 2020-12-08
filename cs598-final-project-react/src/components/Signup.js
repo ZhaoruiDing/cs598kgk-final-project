@@ -53,6 +53,8 @@ const LoginForm = ({ handleLogin }) => {
         expertField: expertField,
         avatar: "",
         upvoteNumber: 0,
+        downVoteNumber: 0,
+        misinformationNumber: 0,
         password: password
       })
       .then(_ => {
