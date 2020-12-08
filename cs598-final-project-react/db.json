@@ -214,6 +214,18 @@
       "downVoteNumber": 90,
       "misinformationNumber": 0,
       "password": "123"
+    },
+    {
+      "email": "123@gmail.com",
+      "userName": "Alice",
+      "location": "Urbana",
+      "occupation": "Student",
+      "verified": false,
+      "expertField": "Computer Science",
+      "avatar": "",
+      "upvoteNumber": 0,
+      "password": "123456",
+      "id": 17
     }
   ],
   "answers": [
@@ -436,7 +448,7 @@
       "id": 4,
       "title": "Why should I study economics?",
       "description": "As title.",
-      "userId": 4,
+      "userId": 1,
       "category": [
         "Economics",
         "University"

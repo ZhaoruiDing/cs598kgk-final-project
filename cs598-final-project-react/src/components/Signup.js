@@ -97,7 +97,7 @@ const LoginForm = ({ handleLogin }) => {
               error={
                 userEmailTouched && !userEmail
                   ? {
-                    content: 'user ID is required',
+                    content: 'user email is required',
                     pointing: 'above'
                   }
                   : false
